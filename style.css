@@ -40,7 +40,7 @@ section > * {
 section h1 {
   font-weight: 530;
   font-size: 56px;
-  color: #ff6B00;
+  color: #ff6b00;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: normal;
   line-height: 60px;
@@ -56,8 +56,8 @@ section h4 {
 
 section p {
   font-weight: 400;
-font-size: 16px;
-line-height: 24px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .mobile {
@@ -72,6 +72,7 @@ line-height: 24px;
   align-items: center;
   padding: 1rem;
 }
+
 .menu img {
   width: 16px;
   height: 16px;
