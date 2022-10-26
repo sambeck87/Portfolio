@@ -1,4 +1,4 @@
-# Hello_world
+# Setup and mobile-first
 
 Setup and mobile-first is the first project from the Microverse full-program and it is the beginning of my professional portfolio. This project, in particular, create the first 2 blocks of my portfolio.
 
@@ -22,7 +22,7 @@ To get a local copy up and running follow these simple example steps.
 ### Install
 - Go to this repo and copy the project link
         https://github.com/sambeck87/setup_and_mobile_first
-- Open your terminal and clone the repo with this command "git clone https://github.com/sambeck87/Hello_world.git"
+- Open your terminal and clone the repo with this command "git clone https://github.com/sambeck87/Setup and mobile-first.git"
 - Now, you have a copy on your pc. 
 - To open it, make double-click on the HTML file.
 
@@ -53,5 +53,5 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.# Hello_world
-# Hello_world
+This project is [MIT](./LICENSE) licensed.# Setup and mobile-first
+# Setup and mobile-first
