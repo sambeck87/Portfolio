@@ -64,7 +64,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-top: 0;
+  margin-top: 35px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
 }
@@ -123,4 +123,15 @@ a img:active {
 .logo a::after {
   color: #fff5e1;
   opacity: 0.4;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: 327px;
+}
+.pj1 {
+  background-image: url("./Images/bg_works.png");
+  width: 327;
+  height: 386;
+  background-repeat: none;
 }

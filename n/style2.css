@@ -1,15 +1,16 @@
 body {
   height: fit-content;
   width: 100%;
-  display: flex;
+  display: grid;
   justify-content: center;
+  grid-template-columns: 1;
 }
 
 .general {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height:max-content;
   width: 375px;
   justify-content: center;
 }
@@ -20,7 +21,7 @@ header {
   max-width: 375px;
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   font-style: normal;
 }
 
@@ -50,7 +51,7 @@ header {
 }
 
 .content h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -64,7 +65,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-top: 0;
+  margin-top: 35px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
 }
@@ -97,7 +98,7 @@ header {
   background-repeat: none;
   background-size: contain;
   position: absolute;
-  top: 345px;
+  bottom: 0;
   right: 0;
 }
 
@@ -109,8 +110,7 @@ a img:active {
   border: #ff6b00 1px solid;
   opacity: 1;
 }
-
-.logo a {
+.logo a{
   text-decoration: none;
   color: white;
   width: 77px;
@@ -123,4 +123,8 @@ a img:active {
 .logo a::after {
   color: #fff5e1;
   opacity: 0.4;
+}
+
+.works{
+  background-color: white;
 }
