@@ -1,0 +1,126 @@
+body {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.general {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 375px;
+  justify-content: center;
+}
+
+header {
+  color: white;
+  background-color: #3c3a39;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1a19;
+  color: #fff;
+  width: 100%;
+  height: 590px;
+  justify-content: center;
+}
+
+.content > * {
+  margin: 1rem;
+}
+
+.content h1 {
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  padding-bottom: 0;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  margin-bottom: 0;
+}
+
+.content h4 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  height: 27px;
+  color: #fff5e1;
+  margin-top: 10px;
+}
+
+.content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.menu img {
+  width: 16px;
+  height: 16px;
+}
+
+.media {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-start;
+  padding: 0;
+  margin-top: 0;
+}
+
+.bgimg {
+  background-image: url("./Images/Group.png");
+  height: 300px;
+  width: 100px;
+  background-repeat: none;
+  background-size: contain;
+  position: absolute;
+  top: 345px;
+  right: 0;
+}
+
+a img:hover {
+  opacity: 0.4;
+}
+
+a img:active {
+  border: #ff6b00 1px solid;
+  opacity: 1;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+  width: 77px;
+  height: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.logo a::after {
+  color: #fff5e1;
+  opacity: 0.4;
+}
