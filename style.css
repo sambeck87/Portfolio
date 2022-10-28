@@ -375,12 +375,7 @@ a img:active {
 
 #more_about {
   margin-top: 10px;
-  display: flex;
-  flex-direction: column;
   height: 1200px;
-}
-
-.center {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -398,7 +393,7 @@ a img:active {
   height: 320px;
 }
 
-#more_about > div > ul {
+#more_about > ul {
   width: 227px;
   height: 24px;
   font-family: 'Inter', sans-serif;
@@ -409,22 +404,39 @@ a img:active {
 }
 
 .align {
-  text-align: center;
 }
 
 #style1 {
   list-style-image: url(./Images/bullets/rombo.png);
   list-style-position: outside;
+  margin-bottom: 290px;
+  margin-top: 0;
+}
+
+#stile1 li {
+  text-align: center;
 }
 
 #style2 {
   list-style-image: url(./Images/bullets/square.png);
   list-style-position: outside;
+  margin-bottom: 400px;
+  margin-top: 0;
+}
+
+#style2 li {
+  text-align: center;
 }
 
 #style3 {
   list-style-image: url(./Images/bullets/circle.png);
   list-style-position: outside;
+  margin-bottom: 400px;
+  margin-top: 0;
+}
+
+#style3 li {
+  text-align: center;
 }
 
 #more_about ul li ul {
@@ -439,10 +451,10 @@ a img:active {
 
 .none {
   list-style: none;
-  text-align: center;
   margin-top: 20px;
 }
 
 .none li {
   margin-top: 20px;
+  text-align: center;
 }
