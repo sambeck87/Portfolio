@@ -237,7 +237,6 @@ a img:active {
   height: 386px;
   background-image: url("./Images/bg_works.png");
   width: 327;
-  height: 386;
   background-repeat: none;
 }
 
@@ -272,9 +271,8 @@ a img:active {
   font-size: 15px;
   line-height: 20px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  padding: 0 10px 0 0;
   background: rgba(255, 255, 255, 0.24);
   border: 1px solid #8993a4;
   height: 40px;
@@ -285,7 +283,7 @@ a img:active {
   width: 327px;
   height: 48px;
   border: none;
-  background: #FF6B00;
+  background: #ff6b00;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -333,12 +331,12 @@ a img:active {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #F4F5F7;
+  color: #f4f5f7;
   padding: 10px 0 10px 0;
   padding: 0 20px 0 20px;
 }
 
-#fit_cont{
+#fit_cont {
   padding: 0 0 0 20px;
   display: flex;
   justify-content: space-between;
@@ -349,7 +347,7 @@ a img:active {
   width: 161px;
   height: 48px;
   border: none;
-  background: #ff6B00;
+  background: #ff6b00;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
