@@ -403,9 +403,6 @@ a img:active {
   line-height: 44px;
 }
 
-.align {
-}
-
 #style1 {
   list-style-image: url(./Images/bullets/rombo.png);
   list-style-position: outside;
@@ -454,7 +451,7 @@ a img:active {
   margin-top: 20px;
 }
 
-.none li {
+.none > li {
   margin-top: 20px;
   text-align: center;
 }
