@@ -451,7 +451,7 @@ a img:active {
   margin-top: 20px;
 }
 
-.none > li {
+#list >li {
   margin-top: 20px;
   text-align: center;
 }
