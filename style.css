@@ -127,6 +127,8 @@ a img:active {
 }
 
 .works {
+  display: grid;
+  grid-template-columns: repeat(7, 386px) / 327px;
   background-color: #fff;
   height: 3400px;
 }
@@ -214,7 +216,7 @@ a img:active {
   background-color: #fff;
   max-width: 375px;
   display: grid;
-  grid-template: repeat(7, 386px) / 327px;
+  grid-template: repeat(6, 386px) / 327px;
   row-gap: 15px;
   padding: 0 24px 0 24px;
   color: #fff;
