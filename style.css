@@ -3,6 +3,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: #8993a4;
 }
 
 .general {
@@ -123,4 +124,331 @@ a img:active {
 .logo a::after {
   color: #fff5e1;
   opacity: 0.4;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: repeat(7, 386px) / 327px;
+  background-color: #fff;
+  height: 3400px;
+}
+
+.resent_project {
+  background-color: #fff;
+  padding-left: 24px;
+  padding-bottom: 2rem;
+}
+
+.contain_rp {
+  max-width: 375px;
+  background-color: white;
+  display: grid;
+  grid-template-areas: '#placehold1 #placehold1 #placehold1' '#subtitle1 #subtitle1 #subtitle1' '#description1 #description1 #description1' '#tools1 #tools1 #tools1' '#button11 #button11 #button11';
+}
+
+.title1 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  color: #1c1a19;
+  padding-top: 5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#placehold1 {
+  width: 327px;
+}
+
+#subtitle1 > h5 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  height: fit-content;
+}
+
+#description1 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 24px;
+  width: 327px;
+  margin-top: -7px;
+}
+
+#tools1 > ul {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10%;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+#button11 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  width: 124px;
+  height: 48px;
+  border: none;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: white;
+}
+
+.rest {
+  background-color: #fff;
+  max-width: 375px;
+  display: grid;
+  grid-template: repeat(6, 386px) / 327px;
+  row-gap: 15px;
+  padding: 0 24px 0 24px;
+  color: #fff;
+  gap: 30px;
+  padding-bottom: 120px;
+}
+
+.pj11 {
+  height: 386px;
+  background-image: url("./Images/bg_works.png");
+  width: 327;
+  background-repeat: none;
+}
+
+.cont_rest {
+  display: grid;
+  grid-template-areas: '.tproj1  .tproj1 .tproj1 ' '.desproj1 .desproj1 .desproj1' '.cont11 cont11 cont11' '.bigbutton1 .bigbutton1. bigbutton1';
+  background: none;
+}
+
+.tproj1 {
+  width: 295px;
+  height: 81px;
+  margin-top: 80px;
+  margin-bottom: 0;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 0 20px 0 20px;
+}
+
+.desproj1 {
+  width: 295px;
+  height: 87px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 20px 0 20px;
+}
+
+.bigbutton1 {
+  width: 327px;
+  height: 48px;
+  border: none;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: white;
+  text-align: center;
+}
+
+.cont1 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.24);
+  border: 1px solid #8993a4;
+  height: 40px;
+  padding: 0 10px 0 10px;
+}
+
+.media2 {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0 20% 0 20px;
+  margin-top: 0;
+}
+
+.about {
+  background: #1c1a19;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+#t_about {
+  margin-top: 120px;
+  margin-bottom: 0;
+  width: 327px;
+  height: 79px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  padding: 0 20px 0 20px;
+}
+
+#c_about {
+  width: 327px;
+  height: 148px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #f4f5f7;
+  padding: 10px 0 10px 0;
+  padding: 0 20px 0 20px;
+}
+
+#fit_cont {
+  padding: 0 0 0 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#button_about {
+  width: 161px;
+  height: 48px;
+  border: none;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: white;
+  text-align: center;
+}
+
+.bgimg2 {
+  background-image: url("./Images/about.png");
+  height: 250px;
+  width: 150px;
+  background-repeat: none;
+  background-size: contain;
+  top: 345px;
+  right: 0;
+}
+
+.div_set {
+  margin-left: 24px;
+  margin-right: 24px;
+  border-color: #fff;
+}
+
+#more_about {
+  margin-top: 10px;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.laguage {
+  height: 320px;
+}
+
+.frameworks {
+  height: 430px;
+}
+
+.skills {
+  height: 320px;
+}
+
+#more_about > ul {
+  width: 227px;
+  height: 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+#style1 {
+  list-style-image: url(./Images/bullets/rombo.png);
+  list-style-position: outside;
+  margin-bottom: 290px;
+  margin-top: 0;
+}
+
+#stile1 li {
+  text-align: center;
+}
+
+#style2 {
+  list-style-image: url(./Images/bullets/square.png);
+  list-style-position: outside;
+  margin-bottom: 400px;
+  margin-top: 0;
+}
+
+#style2 li {
+  text-align: center;
+}
+
+#style3 {
+  list-style-image: url(./Images/bullets/circle.png);
+  list-style-position: outside;
+  margin-bottom: 400px;
+  margin-top: 0;
+}
+
+#style3 li {
+  text-align: center;
+}
+
+#more_about ul li ul {
+  width: 114px;
+  height: 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+}
+
+.none {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#list > li {
+  margin-top: 20px;
+  text-align: center;
 }
