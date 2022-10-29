@@ -141,7 +141,7 @@ a img:active {
   max-width: 375px;
   background-color: white;
   display: grid;
-  grid-template-areas: '#placehold1 #placehold1 #placehold1' '#subtitle1 #subtitle1 #subtitle1' '#description1 #description1 #description1' '#tools1 #tools1 #tools1' '#button11 #tools1 #tools1';
+  grid-template-areas: '#placehold1 #placehold1 #placehold1' '#subtitle1 #subtitle1 #subtitle1' '#description1 #description1 #description1' '#tools1 #tools1 #tools1' '#button11 #button11 #button11';
 }
 
 .title1 {
@@ -231,7 +231,7 @@ a img:active {
 
 .cont_rest {
   display: grid;
-  grid-template-areas: '.bigbutton1 .tproj1 .bigbutton1' '.bigbutton1 .desproj1 .bigbutton1' '.cont11' '.bigbutton1 .bigbutton1. bigbutton1';
+  grid-template-areas: '.tproj1  .tproj1 .tproj1 ' '.desproj1 .desproj1 .desproj1' '.cont11 cont11 cont11' '.bigbutton1 .bigbutton1. bigbutton1';
   background: none;
 }
 
