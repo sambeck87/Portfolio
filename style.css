@@ -536,6 +536,7 @@ footer > header {
 #formMessage {
   min-height: 114px;
   min-width: 327px;
+  max-width: 327px;
   background: #fbf8f7;
   margin-top: 24px;
   margin-bottom: 24px;
