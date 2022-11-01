@@ -195,7 +195,7 @@ a img:active {
   line-height: 20px;
 }
 
-#button11 {
+.button11 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -497,4 +497,25 @@ footer > header {
 
 .istyle {
   border: none;
+}
+
+#formMessage {
+  min-height: 114px;
+  min-width: 327px;
+  background: #fbf8f7;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+#formButton {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 124px ;
+}
+
+#mFooter {
+  border-top: 1px #dfe1e6 solid;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
