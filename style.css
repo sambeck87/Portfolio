@@ -212,6 +212,17 @@ a img:active {
   color: white;
 }
 
+.button11:hover {
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+.button11:active {
+  color: #f4f1f0;;
+  background: #e05304;
+}
+
 .rest {
   background-color: #fff;
   max-width: 375px;
@@ -273,6 +284,17 @@ a img:active {
   line-height: 24px;
   color: white;
   text-align: center;
+}
+
+.bigbutton1:hover {
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+.bigbutton1:active {
+  color: #f4f1f0;;
+  background: #e05304;
 }
 
 .cont1 {
@@ -352,6 +374,17 @@ a img:active {
   line-height: 24px;
   color: white;
   text-align: center;
+}
+
+#button_about:hover {
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+#button_about:active {
+  color: #f4f1f0;;
+  background: #e05304;
 }
 
 .bgimg2 {
@@ -474,12 +507,12 @@ footer > header {
   height: 216px;
   font-style: normal;
   font-weight: 700;
-  font-size: 34px;
+  font-size: 32px;
   line-height: 44px;
   text-align: center;
   color: #172b4d;
   margin-top: 140px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 .bform {
@@ -535,6 +568,12 @@ footer > header {
 #lastBotton:active {
   color: #f4f1f0;;
   background: #e05304;
+}
+
+#lastBotton:disabled {
+  border: none;
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
 #mFooter {
