@@ -526,6 +526,17 @@ footer > header {
   letter-spacing: 0.03em;
 }
 
+#lastBotton:hover {
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+#lastBotton:active {
+  color: #f4f1f0;;
+  background: #e05304;
+}
+
 #mFooter {
   border-top: 1px #dfe1e6 solid;
   width: 100%;
