@@ -26,6 +26,12 @@
       <nav class="hamb mobile">
         <a href="#"><img src="./Images/Union.png" alt="menu"></a>
       </nav>
+      <nav class="desktop">
+        <a href="#works">Portfolio</a>
+        <a href="#about">Abaout</a>
+        <a href="#form_section">Contact</a>
+        <a href="#"><img src="./Images/Icon - Mail.png" alt="menu"></a>
+      </nav>
     </header>
 
     <section class="content">
@@ -48,7 +54,7 @@
     </section>
 
 
-    <section class="works">
+    <section class="works" id="works">
       <div class="resent_project">
         <div class="title1">
           <h1 id="tit">My Recent Works</h1>
@@ -230,12 +236,15 @@
       </div>
     </section>
 
-    <section class="about">
-      <section name="first_about">
+    <section class="about" id="about">
+      <section id="first_about">
         <h1 id="t_about">About me</h1>
         <p id="c_about">Hello I'm a software developer! I can help you build a product , feature or website Look through
           some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to
           contact me.</p>
+        <div class="desktop">
+          <button id="button_about" type="button">Get My Resume</button>
+        </div>
         <div id="fit_cont">
           <div>
             <button id="button_about" type="button">Get My Resume</button>
@@ -243,6 +252,8 @@
           <div class="bgimg2"></div>
         </div>
       </section>
+
+      <div class="bgimg2 desktop"></div>
 
       <div class="divisor div_set"></div>
 
@@ -273,7 +284,7 @@
 
         <ul id="style3" class="skills">
           <li class="align">Skills
-            <ul id="list" class="none">
+            <ul id="list1" class="none">
               <li clas>Codekit</li>
               <li>Github</li>
               <li>Codepen</li>
@@ -286,7 +297,7 @@
     </section>
 
     <footer id="form_section">
-      <div>
+      <div id="form_title">
         <h3 id="last_header">I'm always interested in hearing about new projects, so if you'd like to chat please get in
           touch.</h3>
       </div>
@@ -315,7 +326,7 @@
       </form>
       <div id="mFooter">
         <nav id="fnav" name="media_links">
-          <ul class="media">
+          <ul class="media" id="med_desktop">
             <li><a href="https://github.com/sambeck87"><img src="./Images/social2/github.png" alt="github"></a></li>
             <li><a href="https://www.linkedin.com/in/sandro-israel-hern%C3%A1ndez-zamora-899386a4/"><img
                   src="./Images/social2/LinkedIn.png" alt="linkedin"></a></li>
@@ -325,7 +336,7 @@
           </ul>
         </nav>
       </div>
-      <div id="separator"></div>
+      <div id="separator2"></div>
     </footer>
 
   </div>
