@@ -677,6 +677,22 @@ a img:active {
     color: #fff;
     width: 350px;
     margin-right: 100px;
+    animation-name: menu_desk_animation;
+    animation-duration: 3s;
+  }
+
+  @keyframes menu_desk_animation{
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+    
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
   }
 
   #menu_desk a {
