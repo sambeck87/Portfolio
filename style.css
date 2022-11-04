@@ -1,4 +1,4 @@
- body {
+body {
   height: fit-content;
   width: 100%;
   display: flex;
@@ -625,12 +625,6 @@ a img:active {
 }
 
 @media screen and (min-width: 768px) {
-
-  :: * {
-    margin: 0;
-    padding: 0;
-    }
-
   body {
     min-width: 100%;
     background-color: #e5e5e5;
@@ -991,7 +985,14 @@ a img:active {
     display: none;
   }
 
-  .desktop {
+  #menu_desk > .desktop,
+  #h3_1,
+  #h3_2,
+  #h3_3,
+  #h3_4,
+  #h3_5,
+  #but_desk,
+  #div_desk {
     display: block;
     margin-bottom: 0;
   }
@@ -1086,7 +1087,7 @@ a img:active {
     flex-direction: column;
     justify-content: flex-start;
     text-align: start;
-    margin-left: -30px;
+    margin-left: -70px;
     margin-top: 15px;
   }
 
@@ -1095,7 +1096,7 @@ a img:active {
     flex-direction: column;
     justify-content: center;
     text-align: start;
-    margin-left: 35px;
+    margin-left: -8 px;
     margin-top: 15px;
   }
 
