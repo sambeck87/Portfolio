@@ -1149,16 +1149,16 @@ a img:active {
     width: 100%;
   }
 
-  #fit_cont .bgimg2,
-  #fit_cont #button_about {
-    display: none;
-  }
-
   .desktop #button_about {
     width: 10vw;
     height: 3vw;
     font-size: 0.9vw;
     padding: 0 0.5vw 0 0.5vw;
+  }
+
+  #fit_cont .bgimg2,
+  #fit_cont #button_about {
+    display: none;
   }
 
   #about_desk {
