@@ -642,7 +642,8 @@ a img:active {
   body {
     margin:0;
     padding: 0;
-    margin-left: -5px;
+    margin-left: -10px;
+    overflow-x: hidden;
   }
 
   body {
