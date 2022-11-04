@@ -216,7 +216,7 @@ a img:active {
   line-height: 20px;
 }
 
-.media3{
+.media3 {
   width: 45vw;
   list-style: none;
   margin-left: -39px;
@@ -640,22 +640,17 @@ a img:active {
 
 @media screen and (min-width: 768px) {
   body {
-    margin:0;
     padding: 0;
-    margin-left: -10px;
-    overflow-x: hidden;
-  }
-
-  body {
     position: absolute;
     min-width: 100%;
     max-width: 100%;
     background-color: #e5e5e5;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* overflow-x: hidden; */
+    margin-left: -10px;
+    margin-top: -10px;
+    overflow-x: hidden;
   }
 
   .general {
@@ -698,7 +693,8 @@ a img:active {
   #menu_desk a {
     text-decoration: none;
     color: white;
-    font-size: 1.7vw;
+    font-size: 1.2vw;
+    margin-top: 1.5vw;
   }
 
   #img_mail {
@@ -710,13 +706,13 @@ a img:active {
     color: white;
   }
 
-  .logo a {
+  .menu .logo a {
     text-decoration: none;
     color: white;
     width: 77px;
     height: 24px;
     font-weight: 700;
-    font-size: 2.7vw;
+    font-size: 2vw;
     line-height: 20px;
     margin-left: 7vw;
   }
@@ -931,7 +927,7 @@ a img:active {
     width: 20vw;
   }
 
-  #resBut{
+  #resBut {
     margin-top: 1vw;
   }
 
@@ -1059,10 +1055,10 @@ a img:active {
   #h3_3,
   #h3_4,
   #h3_5,
-  #h3_6{
+  #h3_6 {
     font-size: 3vw;
     line-height: 3vw;
-    padding:0 2vw 0 2vw;
+    padding: 0 2vw 0 2vw;
     height: 6vw;
     margin-left: 0.5vw;
   }
@@ -1206,7 +1202,7 @@ a img:active {
     align-content: flex-start;
     padding-left: 0;
   }
-  
+
   #style1,
   #style2,
   #style3 {
@@ -1242,7 +1238,7 @@ a img:active {
     margin-top: 15px;
   }
 
-   #form_section {
+    #form_section {
     position: relative;
     min-width: 100%;
     max-width: 100%;
@@ -1265,8 +1261,7 @@ a img:active {
     font-weight: 700;
     font-size: 2.8vw;
     line-height: 3vw;
-    text-align: start;
-  }
+    }
 
   #nform {
     max-width: 48vw;
@@ -1312,7 +1307,7 @@ a img:active {
   #im4,
   #im5 {
     width: 3.5vw;
-    height:3.5vm;
+    height: 3.5vm;
   }
 
   #separator2 {
