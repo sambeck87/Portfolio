@@ -635,6 +635,7 @@ a img:active {
     padding: 0;
     }
 
+
   body {
     min-width: 100%;
     background-color: #e5e5e5;
@@ -658,32 +659,44 @@ a img:active {
     background-color: #3c3a39;
     max-width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     height: 72px;
   }
 
-  .menu {
+  #menu_desk {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    width: 350px;
+    margin-right: 100px;
   }
-  
-  .menu img {
+
+  #img_mail {
+    width: 25px;
+    height: 25px;
   }
-  
-  a img:hover {
+
+  .desktop a ::after {
+    color: white;
   }
-  
-  a img:active {
-  }
-  
+
   .logo a {
     text-decoration: none;
     color: white;
     width: 77px;
     height: 24px;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 30px;
+    line-height: 20px;
+    margin-left: 100px;
   }
   
   .logo a::after {
