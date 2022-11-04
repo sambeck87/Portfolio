@@ -3,7 +3,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #8993a4;
+  background-color: #fff;
 }
 
 .general {
@@ -88,6 +88,7 @@ header {
   justify-content: flex-start;
   padding: 0;
   margin-top: 0;
+  width: 30vw;
 }
 
 .bgimg {
@@ -215,6 +216,12 @@ a img:active {
   line-height: 20px;
 }
 
+.media3{
+  width: 45vw;
+  list-style: none;
+  margin-left: -39px;
+}
+
 .button11 {
   display: flex;
   flex-direction: row;
@@ -244,6 +251,7 @@ a img:active {
 }
 
 .rest {
+  margin-top: 70px;
   background-color: #fff;
   max-width: 768px;
   display: grid;
@@ -251,20 +259,24 @@ a img:active {
   row-gap: 15px;
   padding: 0 24px 0 24px;
   color: #fff;
-  gap: 30px;
+  gap: 1px;
   padding-bottom: 120px;
 }
 
 .pj11 {
-  height: 386px;
+  height: 480px;
   background-image: url("./Images/bg_works.png");
-  background-size: 100% 327px;
+  background-size: 100% 380px;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  margin-top: -50px;
 }
 
 .cont_rest {
-  display: grid;
-  grid-template-areas: '.tproj1  .tproj1 .tproj1 ' '.desproj1 .desproj1 .desproj1' '.cont11 cont11 cont11' '.bigbutton1 .bigbutton1. bigbutton1';
-  background: none;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-items: flex-end;
 }
 
 .tproj1 {
@@ -338,6 +350,7 @@ a img:active {
   justify-content: space-between;
   padding: 0 20% 0 20px;
   margin-top: 0;
+  width: 250px;
 }
 
 .about {
@@ -420,7 +433,8 @@ a img:active {
 .div_set {
   margin-left: 24px;
   margin-right: 24px;
-  border-color: #fff;
+  border: solid 1px white;
+  margin-bottom: 250px;
 }
 
 #more_about {
@@ -458,6 +472,7 @@ a img:active {
   list-style-position: outside;
   margin-bottom: 290px;
   margin-top: 0;
+  text-align: center;
 }
 
 #stile1 li {
@@ -661,7 +676,7 @@ a img:active {
     align-items: center;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    height: 72px;
+    height: 2vw;
     min-width: 100%;
     max-width: 100%;
   }
@@ -671,36 +686,23 @@ a img:active {
     flex-direction: row;
     justify-content: space-between;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 2vw;
+    line-height: 2vw;
     text-align: center;
     color: #fff;
-    width: 350px;
-    margin-right: 100px;
-    animation-name: menu_desk_animation;
-    animation-duration: 3s;
-  }
-
-  @keyframes menu_desk_animation{
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-    
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
+    width: 25vw;
+    margin-right: 15vw;
   }
 
   #menu_desk a {
     text-decoration: none;
     color: white;
+    font-size: 1.7vw;
   }
 
   #img_mail {
-    width: 25px;
-    height: 25px;
+    width: 2vw;
+    height: 2vw;
   }
 
   #menu_desk .mlink::after {
@@ -713,9 +715,9 @@ a img:active {
     width: 77px;
     height: 24px;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 2.7vw;
     line-height: 20px;
-    margin-left: 100px;
+    margin-left: 7vw;
   }
 
   .logo a::after {
@@ -729,7 +731,7 @@ a img:active {
     max-width: 100%;
     min-width: 100%;
     display: grid;
-    grid-template-columns: 40px 87px 35% 35%;
+    grid-template-columns: 6.5vw 1vw 43vw 50vw;
     grid-template-rows: 23.2% 9.6% 9.6% 1fr 8.7% 1fr 14.87% 30.35%;
     gap: 0;
   }
@@ -786,6 +788,8 @@ a img:active {
     display: flex;
     flex-direction: column;
     list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   .content > nav {
@@ -824,7 +828,7 @@ a img:active {
     flex-direction: column;
     max-width: 100%;
     min-width: 100%;
-    background-color: #e5e5e5;
+    background-color: #fff;
   }
 
   .title1 {
@@ -946,13 +950,13 @@ a img:active {
   }
 
   .rest {
-    background-color: #e5e5e5;
+    background-color: #fff;
     min-width: 100%;
     max-width: 100%;
     display: grid;
     grid-template-columns: 1vw 1fr 1fr 1fr 1vw;
     grid-template-rows: 1fr 1fr;
-    gap: 0.1vw;
+    gap: 1vw;
     margin-left: 0;
   }
 
@@ -1012,6 +1016,7 @@ a img:active {
     background-size: 31vw 37.5vw;
     height: 37.5vw;
     width: 31vw;
+    margin-top: 0.5vw;
   }
 
   #n5 {
@@ -1021,6 +1026,7 @@ a img:active {
     background-size: 31vw 37.5vw;
     height: 37.5vw;
     width: 31vw;
+    margin-top: 0.5vw;
   }
 
   #n6 {
@@ -1030,6 +1036,7 @@ a img:active {
     background-size: 31vw 37.5vw;
     height: 37.5vw;
     width: 31vw;
+    margin-top: 0.5vw;
   }
 
   #n1,
@@ -1071,6 +1078,11 @@ a img:active {
   #first_about > .desktop {
     display: block;
     margin-bottom: 0;
+  }
+
+  .divisor {
+    margin-bottom: 7vw;
+    border: none;
   }
 
   .bigbutton1 {
@@ -1176,40 +1188,49 @@ a img:active {
     margin-left: 9vw;
   }
 
-  laguage {
-    height: 1vw;
-  }
-  
-  .frameworks {
-    height: 2vw;
-  }
-  
-  .skills {
-    height: 2vw;
-  }
-
   #more_about > ul {
-    width: 227px;
-    height: 24px;
+    width: 30vw;
+    height: 2vw;
     font-size: 2vw;
     line-height: 2vw;
   }
 
   #more_about ul li ul {
-    width: 114px;
-    height: 24px;
+    width: 15vw;
+    height: 37vw;
     font-size: 2vw;
     line-height: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding-left: 0;
+  }
+  
+  #style1,
+  #style2,
+  #style3 {
+    list-style-position: inside;
+  }
+
+  #style1 {
+    text-align: start;
   }
 
   #list > li {
     display: flex;
-    flex-direction: row;
-    align-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     text-align: start;
     margin-top: 1vw;
-    color: red;
-    margin-left: 0;
+  }
+
+  #list {
+    margin-left: 5vw;
+  }
+
+  #list1 {
+    margin-left: 9vw;
   }
 
   #list1 > li {
@@ -1220,13 +1241,13 @@ a img:active {
     margin-top: 15px;
   }
 
-  #form_section {
+   #form_section {
     position: relative;
     min-width: 100%;
     max-width: 100%;
     margin-left: 0;
     padding-left: 0;
-    height: 80vw;
+    height: 75vw;
   }
 
   #form_title {
@@ -1267,17 +1288,12 @@ a img:active {
   #lastBotton {
     font-size: 0.9vw;
     line-height: 1vw;
-    transition: background-color 1s;
-  }
-
-  #lastBotton:hover {
-    background-color: #fff5e1;
   }
 
   #mFooter {
     position: absolute;
-    bottom: 30px;
-    max-width: 400px;
+    bottom: 0.2vw;
+    width: 40vw;
     border: none;
   }
 
@@ -1286,12 +1302,22 @@ a img:active {
     flex-direction: row;
     justify-content: space-between;
     flex-grow: 100%;
+    margin-bottom: 2.5vw;
+  }
+
+  #im1,
+  #im2,
+  #im3,
+  #im4,
+  #im5 {
+    width: 3.5vw;
+    height:3.5vm;
   }
 
   #separator2 {
     border: solid 1px rgb(187, 182, 182);
     position: absolute;
-    bottom: 100px;
+    bottom: 10vw;
     width: 100%;
   }
 }
