@@ -1,4 +1,3 @@
- 
  body {
   height: fit-content;
   width: 100%;
@@ -99,8 +98,8 @@ header {
   background-size: contain;
   position: absolute;
   top: 330px;
-  right: 0px;
-  margin-right: 0px;
+  right: 0;
+  margin-right: 0;
 }
 
 a img:hover {
@@ -627,7 +626,7 @@ a img:active {
 
 @media screen and (min-width: 768px) {
 
-  * {
+  :: * {
     margin: 0;
     padding: 0;
     }
@@ -639,9 +638,9 @@ a img:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x:hidden;
+    overflow-x: hidden;
   }
-  
+
   .general {
     font-family: 'Inter', sans-serif;
     margin-right: 0;
@@ -649,7 +648,7 @@ a img:active {
     min-width: 100%;
     background-color: green;
   }
-  
+
   header {
     color: white;
     background-color: #3c3a39;
@@ -694,12 +693,12 @@ a img:active {
     line-height: 20px;
     margin-left: 100px;
   }
-  
+
   .logo a::after {
     color: #fff5e1;
     opacity: 0.4;
   }
-  
+
   .content {
     height: 870px;
     background-color: #1c1a19;
@@ -709,7 +708,7 @@ a img:active {
     grid-template-columns: 40px 87px 45% 35%;
     grid-template-rows: 192px 80px 80px 24px 72px 5px 123px 251px;
   }
-  
+
   .content h1 {
     color: #f55800;
     font-family: 'Crete Round', serif;
@@ -721,7 +720,7 @@ a img:active {
     grid-row: 2 / span 2;
     min-width: 355px;
   }
-  
+
   .content h4 {
     font-style: normal;
     font-weight: 500;
@@ -732,7 +731,7 @@ a img:active {
     grid-row-start: 5;
     min-width: 375px;
   }
-  
+
   .content p {
     font-style: normal;
     font-weight: 400;
@@ -762,13 +761,12 @@ a img:active {
     width: 30%;
     height: 868px;
     background-repeat: no-repeat;
-    background-size: contain;
     position: absolute;
     top: 90px;
     right: 0;
-    margin-right: 0px;
+    margin-right: 0;
   }
-  
+
   .works {
     position: relative;
     display: flex;
@@ -777,10 +775,10 @@ a img:active {
     max-width: 100%;
     min-width: 100%;
     background-color: #0055e9;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     height: 100%;
   }
-  
+
   .resent_project {
     display: grid;
     max-width: 100%;
@@ -802,7 +800,7 @@ a img:active {
     align-items: center;
   }
 
-  #tit{
+  #tit {
     width: 340px;
     height: 70px;
     margin-right: 10px;
@@ -820,9 +818,9 @@ a img:active {
   .recent_content {
     min-width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%
+    grid-template-columns: 50% 50%;
   }
-  
+
   .contain_rp {
     margin-left: 141px;
     margin-right: 24px;
@@ -830,7 +828,7 @@ a img:active {
     margin-bottom: 24px;
     flex-grow: 1;
   }
-  
+
   #placehold {
     min-width: 100px;
   }
@@ -850,14 +848,14 @@ a img:active {
   }
 
   #subtitle1 > h5 {
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
-    color: #091E42;
+    color: #091e42;
   }
-  
+
   #description1 {
     grid-column: 1 / span 2;
     grid-row: 4 / span 1;
@@ -865,7 +863,7 @@ a img:active {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    color: #091E42;
+    color: #091e42;
     margin-top: 24px;
     min-width: 380px;
   }
@@ -873,7 +871,7 @@ a img:active {
   #tools1 {
     margin-top: 24px;
   }
-  
+
   #tools1 > ul {
     display: flex;
     justify-content: space-between;
@@ -886,11 +884,11 @@ a img:active {
     margin-right: 24px;
     width: 300px;
   }
-  
+
   #resBut {
     margin-top: 24px;
   }
-  
+
   .rest {
     background-color: #e5e5e5;
     min-width: 100%;
@@ -992,16 +990,16 @@ a img:active {
   .mobile {
     display: none;
   }
-  
+
   .desktop {
     display: block;
     margin-bottom: 0;
   }
-  
+
   .desproj1 {
     margin-top: 20px;
   }
-  
+
   .media2 {
     display: flex;
     flex-direction: row;
@@ -1013,14 +1011,13 @@ a img:active {
     width: 250px;
     min-width: 200px;
   }
-  
+
   .about {
-    padding-top: 130px;
     position: relative;
     padding: 0;
     height: 1500px;
   }
-  
+
   #first_about {
     padding-bottom: 157.18px;
     margin-right: 0;
@@ -1036,7 +1033,7 @@ a img:active {
     line-height: 82px;
     color: #f55800;
   }
-  
+
   #c_about {
     font-style: normal;
     font-weight: 400;
@@ -1055,8 +1052,8 @@ a img:active {
   #fit_cont #button_about {
     display: none;
   }
-  
-  .bgimg2 {
+
+  #about .bgimg2 {
     background-image: url("./Images/about_desk.png");
     height: 300px;
     width: 40%;
@@ -1066,7 +1063,7 @@ a img:active {
     position: absolute;
     right: 0;
   }
-  
+
   .div_set {
     clear: both;
     border: #8993a4 solid 1px;
@@ -1074,7 +1071,7 @@ a img:active {
     margin-left: 140px;
     margin-right: 140px;
   }
-  
+
   #more_about {
     display: flex;
     flex-direction: row;
@@ -1083,7 +1080,6 @@ a img:active {
     padding-top: 146px;
     margin-left: 121px;
   }
-
 
   #list > li {
     display: flex;
@@ -1102,7 +1098,7 @@ a img:active {
     margin-left: 35px;
     margin-top: 15px;
   }
-  
+
   #form_section {
     position: relative;
     min-width: 100%;
@@ -1111,7 +1107,7 @@ a img:active {
     padding-left: 0;
     height: 1000px;
   }
-  
+
   #form_title {
     max-width: 30%;
     font-style: normal;
@@ -1159,12 +1155,11 @@ a img:active {
     justify-content: space-between;
     flex-grow: 100%;
   }
-  
+
   #separator2 {
     border: solid 1px rgb(187, 182, 182);
     position: absolute;
     bottom: 100px;
     width: 100%;
   }
-  
 }
