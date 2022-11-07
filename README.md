@@ -1,7 +1,10 @@
 # Setup and mobile-first
 
-Setup and mobile-first is the first project from the Microverse full-program and it is the beginning of my professional portfolio. This project, in particular, create the first 2 blocks of my portfolio.
+Setup and mobile-first is the first project from the Microverse full-program and it is the beginning of my professional portfolio. This project is available online on mobile and desktop version.
 
+##Web page link:
+
+https://sambeck87.github.io/Sandro-portfolio.github.io/
 
 ## Built With
 
