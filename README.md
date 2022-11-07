@@ -4,7 +4,7 @@ Setup and mobile-first is the first project from the Microverse full-program and
 
 ##Web page link:
 
-https://sambeck87.github.io/Sandro-portfolio.github.io/
+https://sambeck87.github.io/setup_and_mobile_first/
 
 ## Built With
 
