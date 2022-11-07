@@ -2,7 +2,7 @@
 
 Setup and mobile-first is the first project from the Microverse full-program and it is the beginning of my professional portfolio. This project is available online on mobile and desktop version.
 
-##Web page link:
+## Web page link:
 
 https://sambeck87.github.io/setup_and_mobile_first/
 
