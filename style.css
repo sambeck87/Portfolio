@@ -7,21 +7,97 @@ body {
 }
 
 .general {
-  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  margin: 0 4% 0 1%;
+  margin: -10px 0 0 -15px;
+  width: 100%;
 }
 
 header {
+  position: fixed;
   color: white;
   background-color: #3c3a39;
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
+  width: 96%;
+  margin-left: -3vw;
+  margin-top: -8px;
+}
+
+.menu-pop {
+  background-color: #212121;
+  color: #fff5e1;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  margin-left: -15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.display-on {
+  display: block;
+}
+
+.display-off {
+  display: none;
+}
+
+#button-menu-pop,
+.btn-menu-pop {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 5vw;
+  top: 1vw;
+  background: transparent;
+  color: #67798e;
+  border: none;
+  display: flex;
+  align-content: center;
+}
+
+.btn-menu-pop:hover {
+  border: 2px solid #fff5e1;
+  border-radius: 5px;
+}
+
+.btn-menu-pop:active {
+  color: #706c63;
+  border: 2px solid #706c63;
+  border-radius: 5px;
+}
+
+#link-menu-pop {
+  display: flex;
+  flex-direction: column;
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  margin-top: 15vw;
+  width: 100%;
+}
+
+.limit {
+  width: 80%;
+  margin-top: 1vw;
+  margin-bottom: 6vw;
+}
+
+#link-menu-pop li > a {
+  text-decoration: none;
+  color: #fff5e1;
+  margin-left: 15vw;
+  margin-bottom: 1vw;
+}
+
+#link-menu-pop li > a:hover {
+  color: #bbb3a1;
 }
 
 .content {
@@ -32,6 +108,7 @@ header {
   width: 100%;
   min-height: 590px;
   justify-content: center;
+  padding-top: 100px;
 }
 
 .content > * {
@@ -97,10 +174,9 @@ header {
   width: 100px;
   background-repeat: none;
   background-size: contain;
-  position: absolute;
-  top: 330px;
-  right: 0;
-  margin-right: 0;
+  align-self:flex-end;
+  margin-right: 2px;
+  margin-top: -190px;
 }
 
 a img:hover {
@@ -640,10 +716,8 @@ a img:active {
 @media screen and (min-width: 768px) {
   body {
     padding: 0;
-    position: absolute;
-    min-width: 100%;
     max-width: 100%;
-    background-color: #e5e5e5;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -652,18 +726,15 @@ a img:active {
     overflow-x: hidden;
   }
 
-  .general {
-    position: relative;
-    font-family: 'Inter', sans-serif;
-    margin-right: 0;
-    max-width: 100%;
-    min-width: 100%;
-    height: auto;
-    background-color: green;
+  .window_card {
+    position: fixed;
+    width: 100%;
+    height: 100hv;
+    top:0;
+    margin-left: 20px;
   }
 
   header {
-    position: relative;
     color: white;
     background-color: #3c3a39;
     display: flex;
@@ -671,9 +742,12 @@ a img:active {
     align-items: center;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    height: 2vw;
-    min-width: 100%;
-    max-width: 100%;
+    height: 3vw;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
   }
 
   #menu_desk {
@@ -686,14 +760,13 @@ a img:active {
     text-align: center;
     color: #fff;
     width: 25vw;
-    margin-right: 15vw;
+    margin-right: 10vw;
   }
 
   #menu_desk a {
     text-decoration: none;
     color: white;
     font-size: 1.2vw;
-    margin-top: 1.5vw;
   }
 
   #img_mail {
@@ -720,6 +793,17 @@ a img:active {
     color: #fff5e1;
   }
 
+    .general {
+    font-family: 'Inter', sans-serif;
+    margin-right: 0;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
   .content {
     height: 50vw;
     background-color: #1c1a19;
@@ -730,6 +814,7 @@ a img:active {
     grid-template-columns: 6.5vw 1vw 43vw 50vw;
     grid-template-rows: 23.2% 9.6% 9.6% 1fr 8.7% 1fr 14.87% 30.35%;
     gap: 0;
+    padding: 3vw 0 3vw 0;
   }
 
   .content h1 {
@@ -798,17 +883,17 @@ a img:active {
   .bgimg {
     background-image: url("./Images/Illustration.png");
     background-size: 100% 100%;
-    width: 30vw;
-    height: 45vw;
+    width: 50vw;
+    height: 65vw;
     background-repeat: no-repeat;
-    position: absolute;
-    top: 90px;
+    top: 220px;
     right: 0;
     margin-right: 0;
+    grid-column-start: 4;
+    grid-row: 1 / span 8;
   }
 
   .works {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -825,6 +910,7 @@ a img:active {
     max-width: 100%;
     min-width: 100%;
     background-color: #fff;
+    padding: 0;
   }
 
   .title1 {
@@ -954,6 +1040,7 @@ a img:active {
     grid-template-rows: 1fr 1fr;
     gap: 1vw;
     margin-left: 0;
+    padding: 0;
   }
 
   #n1 {
@@ -1109,18 +1196,16 @@ a img:active {
   }
 
   .about {
-    position: relative;
     padding: 0;
-    height: 130vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   #first_about {
     margin-right: 0;
     margin-left: 12vw;
-    width: 78vw;
-    height: 45vw;
-    float: left;
-    border-bottom: #8993a4 solid 1px;
+    width: 48vw;
   }
 
   #t_about {
@@ -1128,7 +1213,7 @@ a img:active {
     font-weight: 400;
     font-size: 4.3vw;
     color: #f55800;
-    margin-bottom: 0;
+    margin-bottom: 1vw;
   }
 
   #c_about {
@@ -1166,13 +1251,14 @@ a img:active {
     width: 40vw;
     background-repeat: no-repeat;
     background-size: contain;
-    top: 12vw;
-    position: absolute;
-    right: 0;
+    margin-top: 120px;
   }
 
   .div_set {
-    clear: both;
+    border: #979493 solid 1px;
+    height:0.5px;
+    width: 80%;
+    margin-left: 10vw;
   }
 
   #more_about {
@@ -1181,7 +1267,9 @@ a img:active {
     justify-content: space-around;
     align-items: flex-start;
     padding-top: 146px;
-    margin-left: 9vw;
+    margin-left: 2vw;
+    height: 100vh;
+    padding-bottom: 20vw;
   }
 
   #more_about > ul {
@@ -1238,19 +1326,18 @@ a img:active {
   }
 
   #form_section {
-    position: relative;
     min-width: 100%;
-    max-width: 100%;
     margin-left: 0;
-    padding-left: 0;
-    height: 75vw;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   #form_title {
+    margin-left: 5vw;
     width: 35vw;
-    position: absolute;
-    top: 15vw;
-    left: 9vw;
+    margin-right: 3vw;
   }
 
   #last_header {
@@ -1263,11 +1350,11 @@ a img:active {
   }
 
   #nform {
-    max-width: 48vw;
-    min-width: 48vw;
-    position: absolute;
-    top: 11vw;
-    right: 15%;
+    max-width: 53vw;
+    min-width: 53vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vw;
   }
 
   .bform {
@@ -1277,7 +1364,7 @@ a img:active {
   }
 
   #formButton {
-    position: absolute;
+    align-self: flex-start;
   }
 
   #lastBotton {
@@ -1286,10 +1373,10 @@ a img:active {
   }
 
   #mFooter {
-    position: absolute;
-    bottom: 0.2vw;
-    width: 40vw;
     border: none;
+    width: 100%;
+    border-top: solid gray 1px;
+    padding-top: 1.5vw;
   }
 
   #med_desktop {
@@ -1311,7 +1398,6 @@ a img:active {
 
   #separator2 {
     border: solid 1px rgb(187, 182, 182);
-    position: absolute;
     bottom: 10vw;
     width: 100%;
   }

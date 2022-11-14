@@ -18,22 +18,37 @@
 </head>
 
 <body>
-  <div class="general">
-    <header class="menu">
-      <div class="logo">
-        <a id="logo_link" href="#">Sandro Hernandez</a>
-      </div>
-      <nav class="hamb mobile">
-        <a href="#"><img src="./Images/Union.png" alt="menu"></a>
-      </nav>
-      <nav id="menu_desk" class="desktop">
-        <a class="mlink" href="#works">Portfolio</a>
-        <a href="#about">About</a>
-        <a href="#form_section">Contact</a>
-        <a href="#"><img id="img_mail" src="./Images/Icon - Mail.png" alt="menu"></a>
-      </nav>
-    </header>
 
+  <header class="menu">
+    <div class="logo">
+      <a id="logo_link" href="#">Sandro Hernandez</a>
+    </div>
+    <nav class="hamb mobile">
+      <a id="menu-link" href="#"><img src="./Images/Union.png" alt="menu"></a>
+    </nav>
+    <nav id="menu_desk" class="desktop">
+      <a class="mlink" href="#works">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#form_section">Contact</a>
+      <a href="#"><img id="img_mail" src="./Images/Icon - Mail.png" alt="menu"></a>
+    </nav>
+  </header>
+
+  <div id="menu-mobile" class="menu-pop display-off">
+    <div id="button-menu-pop">
+      <button id="btn-close" class="btn-menu-pop close" type="menu"><img src="./Images/Icon.png" alt="close"></button>
+    </div>
+    <ul id="link-menu-pop" class="media">
+      <li><a class="mlink close" href="#works">Portfolio</a></li>
+      <hr class="limit">
+      <li><a class="mlink close" href="#about">About</a></li>
+      <hr class="limit">
+      <li><a class="mlink close" href="#form_section">Contact</a></li>
+      <hr class="limit close">
+    </ul>
+  </div>
+
+  <div class="general">
     <section class="content">
       <h1>Hey There. <br> I'm Sandro</h1>
       <h4>I'am a Software Developer</h4>
@@ -42,17 +57,18 @@
 
       <nav name="media_links">
         <ul class="media">
-          <li><a href="https://github.com/sambeck87"><img id="im1" src="./Images/social/Disabled.png" alt="github"></a></li>
+          <li><a href="https://github.com/sambeck87"><img id="im1" src="./Images/social/Disabled.png" alt="github"></a>
+          </li>
           <li><a href="https://www.linkedin.com/in/sandro-israel-hern%C3%A1ndez-zamora-899386a4/"><img id="im2"
                 src="./Images/social/Disabled-1.png" alt="linkedin"></a></li>
           <li><a href="#"><img id="im3" src="./Images/social/Enabled.png" alt="unknow"></a></li>
-          <li><a href="https://twitter.com/sambeck4488"><img id="im4" src="./Images/social/Disabled-2.png" alt=""></a></li>
+          <li><a href="https://twitter.com/sambeck4488"><img id="im4" src="./Images/social/Disabled-2.png" alt=""></a>
+          </li>
           <li><a href="#"><img id="im5" src="./Images/social/Disabled-3.png" alt="unknow"></a></li>
         </ul>
       </nav>
       <div class="bgimg"></div>
     </section>
-
 
     <section class="works" id="works">
       <div class="resent_project">
@@ -326,11 +342,13 @@
       <div id="mFooter">
         <nav id="fnav" name="media_links">
           <ul class="media" id="med_desktop">
-            <li><a href="https://github.com/sambeck87"><img id="im1" src="./Images/social2/github.png" alt="github"></a></li>
+            <li><a href="https://github.com/sambeck87"><img id="im1" src="./Images/social2/github.png" alt="github"></a>
+            </li>
             <li><a href="https://www.linkedin.com/in/sandro-israel-hern%C3%A1ndez-zamora-899386a4/"><img id="im2"
                   src="./Images/social2/LinkedIn.png" alt="linkedin"></a></li>
             <li><a href="#"><img id="im3" src="./Images/social2/finger.png" alt="unknow"></a></li>
-            <li><a href="https://twitter.com/sambeck4488"><img id="im4" src="./Images/social2/Tweet.png" alt=""></a></li>
+            <li><a href="https://twitter.com/sambeck4488"><img id="im4" src="./Images/social2/Tweet.png" alt=""></a>
+            </li>
             <li><a href="#"><img id="im5" src="./Images/social2/M.png" alt="unknow"></a></li>
           </ul>
         </nav>
@@ -340,5 +358,6 @@
 
   </div>
 </body>
+<script src="./script.js"></script>
 
 </html>
