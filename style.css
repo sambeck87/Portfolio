@@ -1,5 +1,5 @@
 body {
-  height: fit-content;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -182,7 +182,7 @@ header {
   background-image: url("./Images/Group.png");
   height: 300px;
   width: 100px;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: contain;
   align-self: flex-end;
   margin-right: 2px;
@@ -205,7 +205,7 @@ a img:active {
 
 .works {
   display: grid;
-  grid-template-columns: repeat(7, 1fr) / 1fr;
+  grid-template-columns: 1fr;
   background-color: #fff;
 }
 
@@ -267,7 +267,6 @@ a img:active {
   align-items: flex-start;
   padding: 0;
   margin: 0;
-  height: fit-content;
 }
 
 #description1 {
@@ -340,12 +339,14 @@ a img:active {
 }
 
 .pj11 {
-  height: 480px;
+  height: 90vw;
   background-image: url("./Images/bg_works.png");
-  background-size: 100% 380px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   margin-bottom: 0;
-  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .cont_rest {
@@ -363,7 +364,7 @@ a img:active {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2em;
+  font-size: 7vw;
   line-height: 44px;
   padding: 0 20px 0 20px;
 }
@@ -374,8 +375,8 @@ a img:active {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1em;
-  line-height: 24px;
+  font-size: 4vw;
+  line-height: 5vw;
   padding: 0 20px 0 20px;
 }
 
@@ -391,6 +392,7 @@ a img:active {
   line-height: 24px;
   color: white;
   text-align: center;
+  margin-top: 2vw;
 }
 
 .bigbutton1:hover {
@@ -498,7 +500,7 @@ a img:active {
   background-image: url("./Images/about.png");
   height: 250px;
   width: 150px;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: contain;
   top: 345px;
   right: 0;
@@ -1223,7 +1225,6 @@ a img:active {
     font-size: 1.1vw;
     line-height: 2vw;
     max-width: 35vw;
-    min-width: none;
     padding: 0;
     height: 10vw;
   }
@@ -1383,7 +1384,7 @@ a img:active {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-grow: 100%;
+    flex-grow: 1;
     margin-bottom: 2.5vw;
   }
 
