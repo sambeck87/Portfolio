@@ -89,6 +89,16 @@ header {
   margin-bottom: 6vw;
 }
 
+.logo a {
+  text-decoration: none;
+  color: white;
+  width: 77px;
+  height: 24px;
+  font-weight: 700;
+  font-size: 1.125em;
+  line-height: 24px;
+}
+
 #link-menu-pop li > a {
   text-decoration: none;
   color: #fff5e1;
@@ -179,16 +189,6 @@ header {
   margin-top: -190px;
 }
 
-.logo a {
-  text-decoration: none;
-  color: white;
-  width: 77px;
-  height: 24px;
-  font-weight: 700;
-  font-size: 1.125em;
-  line-height: 24px;
-}
-
 a img:hover {
   opacity: 0.4;
 }
@@ -197,7 +197,6 @@ a img:active {
   border: #ff6b00 1px solid;
   opacity: 1;
 }
-
 
 .logo a::after {
   color: #fff5e1;
