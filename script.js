@@ -1,5 +1,3 @@
-import { allData } from './js/modules/allData.js';
-
 const btnMenu = document.querySelector('#menu-link');
 function displayMenu() {
   const menu = document.querySelector('#menu-mobile');
@@ -30,7 +28,7 @@ const allData = [
   },
   {
     data2: {
-      title: 'Profesional Art Printing Data',      
+      title: 'Profesional Art Printing Data',
       tools: {
         0: 'html',
         1: 'Bootstrap',
@@ -228,46 +226,46 @@ let project = '';
 let numberCard;
 // eslint-disable-next-line no-unused-vars
 function recentProject() {
- project = 'data1';
- numberCard = 0;
+  project = 'data1';
+  numberCard = 0;
 }
 // eslint-disable-next-line no-unused-vars
 function project2() {
- project = 'data2';
- numberCard = 1;
+  project = 'data2';
+  numberCard = 1;
 }
 // eslint-disable-next-line no-unused-vars
 function project3() {
- project = 'data3';
- numberCard = 2;
+  project = 'data3';
+  numberCard = 2;
 }
 // eslint-disable-next-line no-unused-vars
 function project4() {
- project = 'data4';
- numberCard = 3;
+  project = 'data4';
+  numberCard = 3;
 }
 // eslint-disable-next-line no-unused-vars
 function project5() {
- project = 'data5';
- numberCard = 4;
+  project = 'data5';
+  numberCard = 4;
 }// eslint-disable-next-line no-unused-vars
 function project6() {
- project = 'data6';
- numberCard = 5;
+  project = 'data6';
+  numberCard = 5;
 }
 // eslint-disable-next-line no-unused-vars
 function project7() {
- project = 'data7';
- numberCard = 6;
+  project = 'data7';
+  numberCard = 6;
 }
 
 function filling() {
- let lis = '';
- for (let j = 0; j < Object.keys(allData[numberCard][project].tools).length; j += 1) {
-   lis += `<li class="cont1 margin">${allData[numberCard][project].tools[j]}</li>`;
- }
- const popCard = document.querySelector('.card');
- popCard.innerHTML = `<div class="header-card">
+  let lis = '';
+  for (let j = 0; j < Object.keys(allData[numberCard][project].tools).length; j += 1) {
+    lis += `<li class="cont1 margin">${allData[numberCard][project].tools[j]}</li>`;
+  }
+  const popCard = document.querySelector('.card');
+  popCard.innerHTML = `<div class="header-card">
  <h3 class="title-card">${allData[numberCard][project].title}</h3>
  <button id="close-card" class="btn-menu-pop" type="button"><img src="./Images/Icon.png" alt="close"></button>
  <div class="tools-card">
@@ -282,17 +280,17 @@ function filling() {
  <a href="${allData[numberCard][project].live}" class="live button11">See Live<img src="./Images/livebut.png" alt="live-icon"></a>
  <a href="${allData[numberCard][project].source}" class="source button11">See Source <img src="./Images/gitbut.png" alt="git-icon"></a>
 </div>`;
- const projectCard = document.querySelector('#pop-card');
- projectCard.classList.toggle('display-off');
+  const projectCard = document.querySelector('#pop-card');
+  projectCard.classList.toggle('display-off');
 
- const close = document.querySelector('#close-card');
- function closePop() {
-   const projectCard = document.querySelector('#pop-card');
-   projectCard.classList.toggle('display-off');
- }
- close.addEventListener('click', closePop);
+  const close = document.querySelector('#close-card');
+  function closePop() {
+    const projectCard = document.querySelector('#pop-card');
+    projectCard.classList.toggle('display-off');
+  }
+  close.addEventListener('click', closePop);
 }
 
 document.querySelectorAll('.projects').forEach((btn) => {
- btn.addEventListener('click', filling);
+  btn.addEventListener('click', filling);
 });
