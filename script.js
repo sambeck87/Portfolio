@@ -49,7 +49,7 @@ const allData = [
   },
   {
     data3: {
-      title: 'Data Dashboard<br>Healthcare',
+      title: 'Data Dashboard Healthcare',
       mobileTitle: 'Profesional Art Printing Data',
       tools: {
         0: 'html',
@@ -79,7 +79,7 @@ const allData = [
   },
   {
     data5: {
-      title: 'Profesional Art<br>Printing Data More',
+      title: 'Profesional Art Printing Data',
       mobileTitle: 'Profesional Art Printing Data',
       tools: {
         0: 'html',
@@ -94,7 +94,7 @@ const allData = [
   },
   {
     data6: {
-      title: 'Data Dashboard<br>Healthcare',
+      title: 'Data Dashboard Healthcare',
       mobileTitle: 'Profesional Art Printing Data',
       tools: {
         0: 'html',
