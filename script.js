@@ -269,7 +269,7 @@ function project7() {
 function filling() {
   let lis = '';
   for (let j = 0; j < Object.keys(allData[numberCard][project].tools).length; j += 1) {
-    lis += `<li class="cont1 margin">${allData[numberCard][project].tools[j]}</li>`;
+    lis += `<li class="cont2 margin">${allData[numberCard][project].tools[j]}</li>`;
   }
   const popCard = document.querySelector('.card');
   popCard.innerHTML = `<div class="header-card">
