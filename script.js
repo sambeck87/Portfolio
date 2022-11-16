@@ -3,11 +3,18 @@ function displayMenu() {
   const menu = document.querySelector('#menu-mobile');
   menu.classList.toggle('display-off');
 }
-
 btnMenu.addEventListener('click', displayMenu);
+
+function closeMenu() {
+  const menu = document.querySelector('#menu-mobile');
+  menu.classList.toggle('display-off');
+}
+
 document.querySelectorAll('.close').forEach((l) => {
-  l.addEventListener('click', displayMenu);
+  l.addEventListener('click', closeMenu);
 });
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 const allData = [
   {
@@ -28,7 +35,7 @@ const allData = [
   },
   {
     data2: {
-      title: 'Profesional Art Printing Data',
+      title: 'Profesional Art Printing Data',      
       tools: {
         0: 'html',
         1: 'Bootstrap',
@@ -196,28 +203,28 @@ container.innerHTML = `<div class="resent_project">
 </div>
 
 <div class="rest">
-       <div class="pj11" id="n1">
-         <div class="cont_rest">
-           <h3 class="tproj1 mobile">${allData[1].data2.title}</h3>
-           <p class="desproj1">${allData[1].data2.description}</p>
-           <ul class="media2">
-             <li>
-               <div class="cont1">${allData[1].data2.tools[0]}</div>
-             </li>
-             <li>
-               <div class="cont1">${allData[1].data2.tools[1]}</div>
-             </li>
-             <li>
-               <div class="cont1">${allData[1].data2.tools[2]}</div>
-             </li>
-           </ul>
-           <div id="contbut">
-             <button class="bigbutton1 button21 projects" onclick='project2()' type="button">See Project</button>
-           </div>
-         </div>
-       </div>
-       ${restProjects}
- </div>
+        <div class="pj11" id="n1">
+          <div class="cont_rest">
+            <h3 class="tproj1 mobile">${allData[1].data2.title}</h3>
+            <p class="desproj1">${allData[1].data2.description}</p>
+            <ul class="media2">
+              <li>
+                <div class="cont1">${allData[1].data2.tools[0]}</div>
+              </li>
+              <li>
+                <div class="cont1">${allData[1].data2.tools[1]}</div>
+              </li>
+              <li>
+                <div class="cont1">${allData[1].data2.tools[2]}</div>
+              </li>
+            </ul>
+            <div id="contbut">
+              <button class="bigbutton1 button21 projects" onclick='project2()' type="button">See Project</button>
+            </div>
+          </div>
+        </div>
+        ${restProjects}
+  </div>
 `;
 
 restProjects.innerHTML = `${restProjects}`;
@@ -266,19 +273,19 @@ function filling() {
   }
   const popCard = document.querySelector('.card');
   popCard.innerHTML = `<div class="header-card">
- <h3 class="title-card">${allData[numberCard][project].title}</h3>
- <button id="close-card" class="btn-menu-pop" type="button"><img src="./Images/Icon.png" alt="close"></button>
- <div class="tools-card">
-   <ul class="list_tools_card">
-   ${lis}
-   </ul>
- </div>
+  <h3 class="title-card">${allData[numberCard][project].title}</h3>
+  <button id="close-card" class="btn-menu-pop" type="button"><img src="./Images/Icon.png" alt="close"></button>
+  <div class="tools-card">
+    <ul class="list_tools_card">
+    ${lis}
+    </ul>
+  </div>
 </div>
 <img id="img-card" src="${allData[numberCard][project].image}" alt="Image-card">
 <div class="text-card">
- <p class="description-card">${allData[numberCard][project].description}</p>
- <a href="${allData[numberCard][project].live}" class="live button11">See Live<img src="./Images/livebut.png" alt="live-icon"></a>
- <a href="${allData[numberCard][project].source}" class="source button11">See Source <img src="./Images/gitbut.png" alt="git-icon"></a>
+  <p class="description-card">${allData[numberCard][project].description}</p>
+  <a href="${allData[numberCard][project].live}" class="live button11">See Live<img src="./Images/livebut.png" alt="live-icon"></a>
+  <a href="${allData[numberCard][project].source}" class="source button11">See Source <img src="./Images/gitbut.png" alt="git-icon"></a>
 </div>`;
   const projectCard = document.querySelector('#pop-card');
   projectCard.classList.toggle('display-off');
