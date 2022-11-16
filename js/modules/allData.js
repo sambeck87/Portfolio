@@ -10,8 +10,7 @@ const allData = [
         3: 'Ruby',
       },
       image: './Images/Snapshoot Portfolio.png',
-      description:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
       source: 'https://www.google.com/',
       live: 'https://www.facebook.com/',
     },
@@ -41,8 +40,7 @@ const allData = [
         2: 'Ruby',
       },
       image: './Images/project2.png',
-      description:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
       source: '#',
       live: '#',
     },
@@ -57,8 +55,7 @@ const allData = [
         2: 'Ruby',
       },
       image: './Images/project3.png',
-      description:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
       source: '#',
       live: '#',
     },
@@ -73,8 +70,7 @@ const allData = [
         2: 'Ruby',
       },
       image: './Images/project4.jpg',
-      description:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
       source: '#',
       live: '#',
     },
@@ -89,8 +85,7 @@ const allData = [
         2: 'Ruby',
       },
       image: './Images/project5.png',
-      description:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
       source: '#',
       live: '#',
     },
