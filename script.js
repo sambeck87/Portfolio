@@ -35,7 +35,7 @@ const allData = [
   },
   {
     data2: {
-      title: 'Profesional Art Printing Data',      
+      title: 'Profesional Art Printing Data',
       tools: {
         0: 'html',
         1: 'Bootstrap',
