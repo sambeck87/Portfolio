@@ -88,3 +88,67 @@ container.innerHTML = `<div class="resent_project">
   </div>
 </div>
 </div>
+
+<div class="rest">
+        <div class="pj11" id="n1">
+          <div class="cont_rest">
+            <h3 class="tproj1 mobile">${allData[1].data2.title}</h3>
+            <p class="desproj1">${allData[1].data2.description}</p>
+            <ul class="media2">
+              <li>
+                <div class="cont1">${allData[1].data2.tools[0]}</div>
+              </li>
+              <li>
+                <div class="cont1">${allData[1].data2.tools[1]}</div>
+              </li>
+              <li>
+                <div class="cont1">${allData[1].data2.tools[2]}</div>
+              </li>
+            </ul>
+            <div id="contbut">
+              <button class="bigbutton1 button21 projects" onclick='project2()' type="button">See Project</button>
+            </div>
+          </div>
+        </div>
+        ${restProjects}
+  </div>
+`;
+
+restProjects.innerHTML = `${restProjects}`;
+
+let project = '';
+let numberCard;
+// eslint-disable-next-line no-unused-vars
+function recentProject() {
+  project = 'data1';
+  numberCard = 0;
+}
+// eslint-disable-next-line no-unused-vars
+function project2() {
+  project = 'data2';
+  numberCard = 1;
+}
+// eslint-disable-next-line no-unused-vars
+function project3() {
+  project = 'data3';
+  numberCard = 2;
+}
+// eslint-disable-next-line no-unused-vars
+function project4() {
+  project = 'data4';
+  numberCard = 3;
+}
+// eslint-disable-next-line no-unused-vars
+function project5() {
+  project = 'data5';
+  numberCard = 4;
+} // eslint-disable-next-line no-unused-vars
+function project6() {
+  project = 'data6';
+  numberCard = 5;
+}
+// eslint-disable-next-line no-unused-vars
+function project7() {
+  project = 'data7';
+  numberCard = 6;
+}
