@@ -738,7 +738,6 @@ a img:active {
   display: flex;
   margin-bottom: 124px;
   justify-content: center;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
