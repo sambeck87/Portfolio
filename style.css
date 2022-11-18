@@ -1518,6 +1518,19 @@ a img:active {
     padding-bottom: 10px;
   }
 
+  #name,
+  #mail,
+  #formMessage {
+    color:#0d151e;
+    font-size: 1.5vw;
+  }
+
+  #name::placeholder,
+  #mail::placeholder,
+  #text::placeholder{
+    color:#5b5957
+  } 
+
   #formButton {
     align-self: flex-start;
     display: flex;

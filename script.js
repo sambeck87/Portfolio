@@ -316,12 +316,14 @@ document.querySelectorAll('.projects').forEach((btn) => {
 /**********************************************/
 
 const capLetters = 'ABCDEFGHIJKLMNOPQRDSTUVWXYZ';
-const form = document.getElementById('nform');
+const form = document.getElementById('lastBotton');
 const email = document.getElementById('mail');
 const errorMessage = document.getElementById('error_message');
+console.log(form);
 
-form.addEventListener('submit', (event) => {
-  let mail = email.value;
+form.addEventListener('click', (a) => {
+  console.log(email.value);
+  const mail = email.value;
   for (let i = 0; i < mail.length; i++) {
     if (capLetters.includes(mail[i])) {
       errorMessage.classList.remove('display-off');
@@ -331,5 +333,5 @@ form.addEventListener('submit', (event) => {
       errorMessage.classList.add('display-off');
     }
   }
-  localStorage.clear();
-});
+})
+
