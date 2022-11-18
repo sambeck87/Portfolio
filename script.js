@@ -314,11 +314,12 @@ document.querySelectorAll('.projects').forEach((btn) => {
 });
 
 const capLetters = 'ABCDEFGHIJKLMNOPQRDSTUVWXYZ';
-const form = document.getElementById('lastBotton');
+const submit = document.getElementById('lastBotton');
 const email = document.getElementById('mail');
 const errorMessage = document.getElementById('error_message');
+const form = document.getElementById('nform');
 
-form.addEventListener('click', (a) => {
+submit.addEventListener('click', (a) => {
   const mail = email.value;
   for (let i = 0; i < mail.length; i += 1) {
     if (capLetters.includes(mail[i])) {
@@ -327,6 +328,29 @@ form.addEventListener('click', (a) => {
       break;
     } else {
       errorMessage.classList.add('display-off');
+      localStorage.clear();
     }
   }
 });
+
+const names = document.getElementById('name');
+const formMail = document.getElementById('mail');
+const text = document.getElementById('formMessage');
+
+form.addEventListener('input', () => {
+  const formData = {};
+  formData.userName = names.value;
+  formData.userMail = formMail.value;
+  formData.userMessage = text.value;
+  const userData = JSON.stringify(formData);
+  localStorage.setItem('allData', userData);
+});
+
+let getData = localStorage.getItem('allData');
+getData = JSON.parse(getData);
+
+if (getData != null) {
+  names.value = getData.userName;
+  formMail.value = getData.userMail;
+  text.value = getData.userMessage;
+}
