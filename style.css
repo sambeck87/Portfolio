@@ -1528,7 +1528,7 @@ a img:active {
   #name::placeholder,
   #mail::placeholder,
   #text::placeholder {
-    color: #5b5957
+    color: #5b5957;
   }
 
   #formButton {
