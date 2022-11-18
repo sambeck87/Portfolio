@@ -313,25 +313,20 @@ document.querySelectorAll('.projects').forEach((btn) => {
   btn.addEventListener('click', filling);
 });
 
-/**********************************************/
-
 const capLetters = 'ABCDEFGHIJKLMNOPQRDSTUVWXYZ';
 const form = document.getElementById('lastBotton');
 const email = document.getElementById('mail');
 const errorMessage = document.getElementById('error_message');
-console.log(form);
 
 form.addEventListener('click', (a) => {
-  console.log(email.value);
   const mail = email.value;
-  for (let i = 0; i < mail.length; i++) {
+  for (let i = 0; i < mail.length; i += 1) {
     if (capLetters.includes(mail[i])) {
       errorMessage.classList.remove('display-off');
-      event.preventDefault();
+      a.preventDefault();
       break;
     } else {
       errorMessage.classList.add('display-off');
     }
   }
-})
-
+});
