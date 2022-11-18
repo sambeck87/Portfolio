@@ -28,7 +28,8 @@ const allData = [
         3: 'Ruby',
       },
       image: './Images/Snapshoot Portfolio.png',
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+      description:
+        "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
       source: 'https://www.google.com/',
       live: 'https://www.facebook.com/',
     },
@@ -42,7 +43,8 @@ const allData = [
         2: 'Ruby',
       },
       image: './Images/project1.jpeg',
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      description:
+        "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
       source: '#',
       live: '#',
     },
@@ -57,7 +59,8 @@ const allData = [
         2: 'Ruby',
       },
       image: './Images/project2.png',
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      description:
+        "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
       source: '#',
       live: '#',
     },
@@ -72,7 +75,8 @@ const allData = [
         2: 'Ruby',
       },
       image: './Images/project3.png',
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      description:
+        "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
       source: '#',
       live: '#',
     },
@@ -87,7 +91,8 @@ const allData = [
         2: 'Ruby',
       },
       image: './Images/project4.jpg',
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      description:
+        "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
       source: '#',
       live: '#',
     },
@@ -102,7 +107,8 @@ const allData = [
         2: 'Ruby',
       },
       image: './Images/project5.png',
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      description:
+        "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
       source: '#',
       live: '#',
     },
@@ -117,7 +123,8 @@ const allData = [
         2: 'Ruby',
       },
       image: './Images/project6.jpeg',
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      description:
+        "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
       source: '#',
       live: '#',
     },
@@ -255,7 +262,7 @@ function project4() {
 function project5() {
   project = 'data5';
   numberCard = 4;
-}// eslint-disable-next-line no-unused-vars
+} // eslint-disable-next-line no-unused-vars
 function project6() {
   project = 'data6';
   numberCard = 5;
@@ -268,7 +275,11 @@ function project7() {
 
 function filling() {
   let lis = '';
-  for (let j = 0; j < Object.keys(allData[numberCard][project].tools).length; j += 1) {
+  for (
+    let j = 0;
+    j < Object.keys(allData[numberCard][project].tools).length;
+    j += 1
+  ) {
     lis += `<li class="cont2 margin">${allData[numberCard][project].tools[j]}</li>`;
   }
   const popCard = document.querySelector('.card');
@@ -300,4 +311,25 @@ function filling() {
 
 document.querySelectorAll('.projects').forEach((btn) => {
   btn.addEventListener('click', filling);
+});
+
+/**********************************************/
+
+const capLetters = 'ABCDEFGHIJKLMNOPQRDSTUVWXYZ';
+const form = document.getElementById('nform');
+const email = document.getElementById('mail');
+const errorMessage = document.getElementById('error_message');
+
+form.addEventListener('submit', (event) => {
+  let mail = email.value;
+  for (let i = 0; i < mail.length; i++) {
+    if (capLetters.includes(mail[i])) {
+      errorMessage.classList.remove('display-off');
+      event.preventDefault();
+      break;
+    } else {
+      errorMessage.classList.add('display-off');
+    }
+  }
+  localStorage.clear();
 });
