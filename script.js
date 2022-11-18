@@ -328,6 +328,7 @@ submit.addEventListener('click', (a) => {
       break;
     } else {
       errorMessage.classList.add('display-off');
+      localStorage.clear();
     }
   }
 });
