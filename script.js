@@ -134,7 +134,7 @@ const allData = [
 let restProjects = '';
 let cardNumber = 0;
 let number = 0;
-for (let i = 2; i <= 6; i += 1) {
+for (let i = 0; i <= 6; i += 1) {
   number = i + 1;
   cardNumber = `data${number}`;
   const titleCards = allData[i][cardNumber].title;
@@ -280,7 +280,7 @@ function filling() {
     j < Object.keys(allData[numberCard][project].tools).length;
     j += 1
   ) {
-    lis += `<li class="cont2 margin">${allData[numberCard][project].tools[j]}</li>`;
+    lis += `<li class="cont2 margin">${allData[.numberCard][project].tools[j]}</li>`;
   }
   const popCard = document.querySelector('.card');
   popCard.innerHTML = `<div class="header-card">
@@ -333,7 +333,7 @@ submit.addEventListener('click', (a) => {
   }
 });
 
-const names = document.getElementById('name');
+const names = document.getElementById('nams');
 const formMail = document.getElementById('mail');
 const text = document.getElementById('formMessage');
 
@@ -349,7 +349,7 @@ form.addEventListener('input', () => {
 let getData = localStorage.getItem('allData');
 getData = JSON.parse(getData);
 
-if (getData != null) {
+if (getData === null) {
   names.value = getData.userName;
   formMail.value = getData.userMail;
   text.value = getData.userMessage;
