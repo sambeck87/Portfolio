@@ -177,7 +177,7 @@ header {
   font-weight: 400;
   font-size: 15vw;
   line-height: 16vw;
-  margin-top: 10.5rem;
+  margin-top: 45vw;
 }
 
 .content h4 {
@@ -193,7 +193,7 @@ header {
 .content p {
   font-weight: 400;
   font-size: 4.25vw;
-  line-height: 24px;
+  line-height: 6.5vw;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
 }
@@ -261,6 +261,11 @@ a img:active {
   align-items: center;
 }
 
+#tit {
+  margin-top: 32vw;
+  font-weight: 400;
+}
+
 .recent_content {
   display: flex;
   flex-direction: column;
@@ -275,7 +280,8 @@ a img:active {
 }
 
 #placehold {
-  width: 75vw;
+  width: 87vw;
+  margin: 0 6.3vw 6.3vw 6.3vw;
 }
 
 .title1 {
@@ -289,11 +295,13 @@ a img:active {
   color: #1c1a19;
   text-align: center;
   border-bottom: #212121 solid 1px;
+  margin: 0 6.3vw 21.5vw 6.3vw;
 }
 
 #separator1 {
   border: none;
   background-color: transparent;
+  width: 87vw;
 }
 
 #subtitle1>h5 {
