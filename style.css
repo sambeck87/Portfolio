@@ -19,6 +19,8 @@ header {
 
 .window_card {
   position: fixed;
+  z-index: 4;
+  height: 100%;
   backdrop-filter: blur(3px);
   background-color: rgba(41, 40, 40, 0.5);
   display: flex;
@@ -30,15 +32,19 @@ header {
 .card {
   background-color: #fff;
   overflow-y: scroll;
+  margin: 16vw 4.26vw 8.26vw 4.26vw;
 }
 
 .title-card {
-  font-size: 50px;
+  font-size: 8.53vw;
   font-family: 'Roboto', sans-serif;
+  margin: 4.26vw 18.13vw 3.2vw 4.26vw;
+  height: 21.86vw;
 }
 
 .header-card {
   position: relative;
+  margin: 0;
 }
 
 .list_tools_card {
@@ -47,22 +53,26 @@ header {
   justify-content: flex-start;
 }
 
-#img-card {}
+.img-card {
+  margin: 0 4.26vw 6.4vw 4.26vw;
+  width: 82.93vw;
+  height: 58vw;
+}
 
 .text-card {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0 4.26vw 4.26vw 4.26vw;
 }
 
-.description-card {}
-
-.live,
-.source {
-  flex-grow: 1;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+.description-card {
+  margin: 0 0 4.26vw 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.26vw;
+  line-height: 6.3vw;
 }
 
 .menu-pop {
@@ -99,6 +109,16 @@ header {
   margin-top: 0.5rem;
 }
 
+#close-card {
+  padding: 0;
+  margin: 2.4vw 2vw 0 6.93vw
+}
+
+#x-close {
+  width: 3.2vw;
+  height: 3.2vw;
+}
+
 .btn-menu-pop:hover {
   border: 2px solid #fff5e1;
   border-radius: 5px;
@@ -117,6 +137,10 @@ header {
   line-height: 44px;
   margin: 5rem 1.5rem 0 1.5rem;
   padding: 0;
+}
+
+.media2 li {
+  margin-right: 3.2vw;
 }
 
 #link-menu-pop li {
@@ -207,8 +231,6 @@ header {
   align-items: center;
   z-index: 1;
 }
-
-.menu img {}
 
 .media {
   display: flex;
@@ -308,16 +330,21 @@ a img:active {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2em;
-  align-items: flex-start;
+  font-size: 8.55vw;
+  margin: 0 6.3vw 3.15vw 6.3vw;
 }
 
 #description1 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 100;
-  font-size: 0.938em;
-  line-height: 24px;
+  font-weight: 400;
+  font-size: 4.27vw;
+  line-height: 6.4vw;
+  color: #091e42;
+}
+
+#description1 p {
+  margin: 0 6.3vw 3.15vw 6.3vw;
 }
 
 #tools1>ul {
@@ -331,10 +358,15 @@ a img:active {
   line-height: 20px;
 }
 
-.media3 {
+#media3 {
   width: 45vw;
   list-style: none;
-  margin-left: -39px;
+  padding: 0;
+  margin: 0 6.3vw 3.2vw 6.3vw;
+}
+
+#media3 li {
+  margin-right: 3.2vw;
 }
 
 .button11 {
@@ -346,9 +378,13 @@ a img:active {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 0.938em;
-  line-height: 24px;
+  font-size: 4.53vw;
+  line-height: 6.4vw;
   color: white;
+  padding: 3.2vw;
+  width: 33vw;
+  height: 12.8vw;
+  margin: 0 6.3vw 6.3vw 6.3vw;
 }
 
 .button11:hover {
@@ -360,6 +396,31 @@ a img:active {
 .button11:active {
   color: #f4f1f0;
   background: #e05304;
+}
+
+.live,
+.source {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 3.2vw;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.2vw;
+  line-height: 6.4vw;
+  margin: 0;
+  text-decoration: none;
+}
+
+.live {
+  margin-right: 5vw;
+}
+
+.live img,
+.source img {
+  margin-left: 4.26vw;
 }
 
 .rest {
@@ -374,8 +435,8 @@ a img:active {
 
 .pj11 {
   background-image: url("./Images/bg_works.png");
-  background-size: 100% 380px;
   background-repeat: no-repeat;
+  margin: 0 6.3vw 6.3vw 6.4vw;
 }
 
 .desktitbut {
@@ -396,18 +457,19 @@ a img:active {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2em;
-  line-height: 44px;
+  font-size: 8.53vw;
+  line-height: 11.73vw;
+  margin: 22.4vw 4.26vw 3.2vw 4.26vw;
 }
 
 .desproj1 {
-  max-width: 768px;
-  height: 87px;
+  height: 23.2vw;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1em;
-  line-height: 24px;
+  font-size: 4.26vw;
+  line-height: 6.4vw;
+  margin: 0 4.26vw 3.2vw 4.26vw;
 }
 
 .bigbutton1 {
@@ -416,10 +478,13 @@ a img:active {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 0.938em;
-  line-height: 24px;
+  font-size: 4.53vw;
+  line-height: 6.4vw;
   color: white;
   text-align: center;
+  height: 12.8vw;
+  width: 100%;
+  padding: 3.2vw 0;
 }
 
 .bigbutton1:hover {
@@ -437,21 +502,49 @@ a img:active {
 .cont1 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 0.938em;
-  line-height: 20px;
+  font-size: 3.77vw;
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.24);
   border: 1px solid #8993a4;
+  padding: 2.6vw 3.2vw 2.6vw 3.2vw;
+  color: #091e42;
+  font-weight: 500;
+  line-height: 5.33vw;
+}
+
+.list_tools_card {
+  margin: 0 0 6.5vw 4.26vw;
+  padding: 0;
+}
+
+.lenguajes {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.46vw;
+  line-height: 4.26vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.24);
+  border: 1px solid #8993a4;
+  padding: 2.6vw 3.2vw 2.6vw 3.2vw;
+  color: #091e42;
+  margin-right: 2.6vw;
 }
 
 .media2 {
   display: flex;
   flex-direction: row;
   list-style: none;
-  justify-content: space-between;
+  margin: 0 4.26vw 5.86vw 4.26vw;
+  padding: 0;
+}
+
+.media2 li div {
+  color: white;
 }
 
 .about {
@@ -759,7 +852,7 @@ a img:active {
 
   #img-card {
     width: 50vw;
-    margin-right: 2vw;
+    margin: 2vw;
   }
 
   .text-card {
