@@ -187,7 +187,7 @@ container.innerHTML = `<div class="resent_project">
       <p>${allData[0].data1.description}</p>
     </div>
     <div id="tools1">
-      <ul class="media3">
+      <ul id="media3">
         <li>
           <div class="cont1">${allData[0].data1.tools[0]}</div>
         </li>
@@ -280,19 +280,19 @@ function filling() {
     j < Object.keys(allData[numberCard][project].tools).length;
     j += 1
   ) {
-    lis += `<li class="cont2 margin">${allData[numberCard][project].tools[j]}</li>`;
+    lis += `<li class="lenguajes">${allData[numberCard][project].tools[j]}</li>`;
   }
   const popCard = document.querySelector('.card');
   popCard.innerHTML = `<div class="header-card">
   <h3 class="title-card">${allData[numberCard][project].title}</h3>
-  <button id="close-card" class="btn-menu-pop" type="button"><img src="./Images/Icon.png" alt="close"></button>
+  <button id="close-card" class="btn-menu-pop" type="button"><img id="x-close" src="./Images/Icon.png" alt="close"></button>
   <div class="tools-card">
     <ul class="list_tools_card">
     ${lis}
     </ul>
   </div>
 </div>
-<img id="img-card" src="${allData[numberCard][project].image}" alt="Image-card">
+<img class="img-card" src="${allData[numberCard][project].image}" alt="Image-card">
 <div class="text-card">
   <p class="description-card">${allData[numberCard][project].description}</p>
   <a href="${allData[numberCard][project].live}" class="live button11">See Live<img src="./Images/livebut.png" alt="live-icon"></a>
