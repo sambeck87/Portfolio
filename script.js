@@ -170,7 +170,7 @@ for (let i = 2; i <= 6; i += 1) {
 }
 
 const container = document.getElementById('works');
-container.innerHTML = `<div class="resent_project">
+container.innerHTML = `<div class="resent_project white_back_groud">
 <div class="title1">
   <h1 id="tit">${allData[0].data1.title}</h1>
   <div id="separator1"></div>
