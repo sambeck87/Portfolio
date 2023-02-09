@@ -625,12 +625,6 @@ a img:active {
   align-items: center;
 }
 
-.laguage {}
-
-.frameworks {}
-
-.skills {}
-
 #more_about > ul {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -1322,7 +1316,7 @@ a img:active {
   #h3_5,
   #h3_6,
   #but_desk,
-  #div_desk, {
+  #div_desk {
     display: block;
     margin-bottom: 0;
   }
@@ -1474,18 +1468,6 @@ a img:active {
 
   #list {
     margin-left: 5vw;
-  }
-
-  #list1 {
-    margin-left: 9vw;
-  }
-
-  #list1 > li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: start;
-    margin-top: 15px;
   }
 
   #form_section {
