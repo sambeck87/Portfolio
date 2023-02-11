@@ -291,8 +291,9 @@ function filling() {
     ${lis}
     </ul>
   </div>
+  <img class="img-card" src="${allData[numberCard][project].image}" alt="Image-card">
 </div>
-<img class="img-card" src="${allData[numberCard][project].image}" alt="Image-card">
+
 <div class="text-card">
   <p class="description-card">${allData[numberCard][project].description}</p>
   <a href="${allData[numberCard][project].live}" class="live button11">See Live<img src="./Images/livebut.png" alt="live-icon"></a>
@@ -319,12 +320,12 @@ const email = document.getElementById('mail');
 const errorMessage = document.getElementById('error_message');
 const form = document.getElementById('nform');
 
-submit.addEventListener('click', (a) => {
+submit.addEventListener('click', (e) => {
   const mail = email.value;
   for (let i = 0; i < mail.length; i += 1) {
     if (capLetters.includes(mail[i])) {
       errorMessage.classList.remove('display-off');
-      a.preventDefault();
+      e.preventDefault();
       break;
     } else {
       errorMessage.classList.add('display-off');
