@@ -166,12 +166,12 @@ header {
   line-height: 6.4vw;
 }
 
-#link-menu-pop li > a {
+#link-menu-pop li>a {
   text-decoration: none;
   color: #fff5e1;
 }
 
-#link-menu-pop li > a:hover {
+#link-menu-pop li>a:hover {
   color: #bbb3a1;
 }
 
@@ -192,7 +192,7 @@ header {
   position: relative;
 }
 
-.content > * {
+.content>* {
   margin: 0 6.3vw;
 }
 
@@ -203,7 +203,7 @@ header {
   font-weight: 400;
   font-size: 15vw;
   line-height: 16vw;
-  margin-top: 45vw;
+  margin: 45vw 0 0 0;
 }
 
 .content h4 {
@@ -213,7 +213,7 @@ header {
   font-size: 6.5vw;
   line-height: 8.53vw;
   color: #fff5e1;
-  margin: 3vw 6.3vw;
+  margin: 3vw 0 3vw 0;
 }
 
 .content p {
@@ -222,6 +222,7 @@ header {
   line-height: 6.5vw;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
+  margin: 0;
 }
 
 .menu {
@@ -254,13 +255,13 @@ header {
 }
 
 #social_media {
-  margin: 5.3vw 0 34.6vw 0;
+  margin: 4.3vw 0 34.6vw 0;
   padding: 0;
 }
 
-.live > img,
-.source > img {
-  margin-left: 4.26vw;
+.live>img,
+.source>img {
+  margin-left: 0.26vw;
 }
 
 a img:hover {
@@ -333,7 +334,7 @@ a img:active {
   width: 87vw;
 }
 
-#subtitle1 > h5 {
+#subtitle1>h5 {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
@@ -354,10 +355,8 @@ a img:active {
   margin: 0 6.3vw 3.15vw 6.3vw;
 }
 
-#tools1 > ul {
+#tools1>ul {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -625,7 +624,7 @@ a img:active {
   align-items: center;
 }
 
-#more_about > ul {
+#more_about>ul {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -682,7 +681,7 @@ a img:active {
   list-style: none;
 }
 
-#list > li {
+#list>li {
   text-align: center;
 }
 
@@ -814,62 +813,98 @@ a img:active {
 }
 
 @media screen and (min-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  .content *,
+  .works * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .title1 * {
+    margin: 0;
+    padding: 0;
+    width: 10px;
+  }
+
+  /* ************************************************* */
+
   .window_card {
     position: fixed;
     width: 100%;
     height: 100vh;
     top: 0;
-    margin-left: 20px;
   }
 
   #menu-mobile {
     display: none;
   }
 
-  header {
-    color: white;
-    background-color: #3c3a39;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    height: 3vw;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    position: fixed;
-    top: 0;
+  .menu {
+    height: 5vw;
+  }
+
+  .logo {
+    margin-left: 10.69vw;
+    font-size: 1.38vw;
+    line-height: 1.94vw;
+    font-weight: 700;
   }
 
   .card {
+    position: relative;
+    width: 80.27vw;
+    height: 44.82vw;
+    margin: 1vw 9.86vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    padding: 0 3vw 0 3vw;
     align-content: flex-start;
   }
 
   .header-card {
-    width: 100%;
-    height: 11rem;
+    position: initial;
   }
 
   .title-card {
-    margin-top: 30px;
-    margin-bottom: 0;
+    height: 2.77vw;
+    font-weight: 400;
     font-family: 'Crete Round', sans-serif;
-    font-size: 32px;
+    font-size: 2.2vw;
+    line-height: 3.025vw;
+    margin: 1.65vw 4.86vw 0.85vw 1.65vw;
   }
 
   #close-card {
-    right: 0;
-    top: 37px;
-    margin-bottom: 10px;
+    right: 2.63vw;
+    top: 2.63vw;
+    margin: 0;
+  }
+
+  #x-close {
+    width: 0.83vw;
+    height: 0.83vw;
   }
 
   .list_tools_card {
-    margin-top: 1vw;
+    margin: 0 0 2.47vw 0;
+  }
+
+  .lenguajes {
+    padding: 1vw;
+    font-weight: 500;
+    font-size: 1.04vw;
+    line-height: 1.38vw;
+    margin: 0 0.83vw 0 1.65vw;
   }
 
   .cont2 {
@@ -881,17 +916,19 @@ a img:active {
     background: rgba(255, 255, 255, 0.24);
     border: 1px solid #8993a4;
     height: 20px;
-    padding: 5px;
   }
 
-  #img-card {
-    width: 50vw;
-    margin: 2vw;
+  .img-card {
+    margin: 0 1.65vw 1.875vw 1.65vw;
+    width: 45.76vw;
+    height: 31.1vw;
   }
 
   .text-card {
-    width: 28vw;
-    height: auto;
+    position: relative;
+    margin: 11.83vw 1.65vw 2.25vw 0;
+    width: 29.4vw;
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -899,10 +936,25 @@ a img:active {
   }
 
   .description-card {
-    margin-top: 0;
+    font-size: 1.11vw;
+    line-height: 2.08vw;
+  }
+
+  .live,
+  .source {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .live img,
+  .source img {
+    margin: 0.7vw;
+    width: 1.38vw;
+    height: 1.25vw;
   }
 
   #menu_desk {
+    margin-right: 10.48vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -912,13 +964,16 @@ a img:active {
     text-align: center;
     color: #fff;
     width: 25vw;
-    margin-right: 10vw;
   }
 
   #menu_desk a {
-    text-decoration: none;
+    display: flex;
+    align-items: center;
     color: white;
-    font-size: 1.2vw;
+    font-size: 1.25vw;
+    margin-left: 2.2vw;
+    line-height: 1.38vw;
+    text-decoration: none;
   }
 
   #img_mail {
@@ -933,79 +988,59 @@ a img:active {
   #logo_link {
     text-decoration: none;
     color: white;
-    width: 77px;
-    height: 24px;
     font-weight: 700;
     font-size: 2vw;
-    line-height: 20px;
-    margin-left: 7vw;
+    line-height: 1.38vw;
   }
 
   .logo a::after {
     color: #fff5e1;
   }
 
-  .general {
-    font-family: 'Inter', sans-serif;
-    margin-right: 0;
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .content {
-    height: 50vw;
-    background-color: #1c1a19;
-    color: #fff;
-    max-width: 100%;
-    min-width: 100%;
-    display: grid;
-    grid-template-columns: 6.5vw 1vw 43vw 50vw;
-    grid-template-rows: 23.2% 9.6% 9.6% 1fr 8.7% 1fr 14.87% 30.35%;
-    gap: 0;
-    padding: 3vw 0 3vw 0;
+  .information {
+    grid-column-start: 2;
+    width: 38.9vw;
+    margin: 0 50.25vw 0 0;
+  }
+
+  .content nav {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin: 26.375vw 6.12vw 23.44vw 2.475vw;
+  }
+
+  #social_media {
+    margin: 0;
   }
 
   .content h1 {
-    color: #f55800;
-    font-family: 'Crete Round', serif;
-    font-style: normal;
+    margin: 18.15vw 0 1.65vw 0;
     font-weight: 400;
-    font-size: 5vw;
-    line-height: 5vw;
-    grid-column-start: 3;
-    grid-row: 2 / span 2;
-    display: flex;
-    align-items: flex-end;
+    font-size: 4.95vw;
+    line-height: 5.6375vw;
   }
 
   .content h4 {
-    font-style: normal;
+    margin: 0 0 1vw 0;
     font-weight: 500;
-    font-size: 2.8vw;
-    line-height: 3vw;
-    color: #fff;
-    grid-column-start: 3;
-    grid-row-start: 5;
-    min-width: 375px;
+    font-size: 2.2vw;
+    line-height: 3.025vw;
   }
 
   .content p {
-    font-style: normal;
+    margin: 0 0 17.25vw 0;
     font-weight: 400;
-    font-size: 1.5vw;
-    line-height: 3vw;
-    color: #f4f5f7;
-    grid-column-start: 3;
-    grid-row-start: 7;
-    margin-left: 3%;
-    display: inline;
+    font-size: 1.38vw;
+    line-height: 3.2vw;
   }
 
   .cont1 {
+    padding: 1.5vw 0.83vw;
     font-size: 1.2vw;
     line-height: 1vw;
     display: flex;
@@ -1014,84 +1049,60 @@ a img:active {
     background: rgba(255, 255, 255, 0.24);
     border: 1px solid #8993a4;
     height: 1.5vw;
-    padding: 0.5vw;
   }
 
   .media {
     display: flex;
     flex-direction: column;
     list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .content > nav {
-    align-items: center;
-    grid-column-start: 1;
-    grid-row: 4 / span 6;
-    margin-top: -40px;
   }
 
   .bgimg {
+    position: absolute;
     background-image: url("./Images/Illustration.png");
     background-size: 100% 100%;
-    width: 50vw;
-    height: 65vw;
+    width: 44vw;
+    height: 55vw;
     background-repeat: no-repeat;
-    top: 220px;
+    top: 5vw;
     right: 0;
-    margin-right: 0;
-    grid-column-start: 4;
-    grid-row: 1 / span 8;
   }
 
   .works {
+    margin: 0 9.79vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%;
-    min-width: 100%;
-    padding-bottom: 0;
-    height: 100%;
-    margin-left: 0;
   }
 
   .resent_project {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    min-width: 100%;
     background-color: #fff;
-    padding: 0;
   }
 
   .title1 {
     display: flex;
     flex-direction: row;
-    font-family: 'Crete Round', serif;
     font-style: normal;
     color: #091e42;
-    font-weight: 400;
-    font-size: 2vw;
-    line-height: 52px;
     border: none;
     align-items: center;
   }
 
   #tit {
-    width: 50vw;
-    height: 70px;
-    margin-right: 1vw;
+    width: 21.875vw;
+    margin: 9.375vw 0 7.91vw 0;
+    font-weight: 400;
+    font-size: 2.77vw;
+    line-height: 3.6vw;
     text-align: start;
-    margin-left: 8vw;
   }
 
   #separator1 {
     border: #8d8d8d solid 1px;
-    flex-grow: 1;
-    height: 0;
-    margin-right: 153.5px;
-    width: 90vw;
+    width: 55.1vw;
+    margin: 1.5vw 0 0 1.65vw;
   }
 
   .recent_content {
@@ -1099,88 +1110,67 @@ a img:active {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 100px;
     align-items: flex-start;
   }
 
-  .contain_rp {
-    margin-right: 2vw;
-    margin-top: 0;
-  }
-
   #placehold {
-    width: 48vw;
+    margin: 0 0 1.65vw 0;
+    height: 31.1vw;
+    width: 47.5vw;
   }
 
   #text_resent {
-    margin-right: 143px;
+    margin: 0 1.65vw;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    margin-bottom: 24px;
     width: 6vw;
   }
 
-  #subtitle1 {
-    position: static;
-    margin-bottom: -20px;
-  }
-
-  #subtitle1 > h5 {
-    font-family: 'Crete Round', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3vw;
-    line-height: 3vw;
+  #subtitle1>h5 {
+    margin: 0 0 1.65vw 0;
+    font-size: 2.77vw;
+    line-height: 3.6vw;
     color: #091e42;
   }
 
-  #description1 {
-    grid-column: 1 / span 2;
-    grid-row: 4 / span 1;
+  #description1 p {
+    margin: 0 0 1.65vw 0;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.45vw;
-    line-height: 2vw;
+    font-size: 1.38vw;
+    line-height: 1.94vw;
     color: #091e42;
-    margin-top: 24px;
-    width: 35vw;
   }
 
-  #tools1 {
-    margin-top: 1vw;
-  }
-
-  #tools1 > ul {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 10%;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
+  #tools1>ul {
+    margin: 0 0 1.65vw 0;
     font-weight: 500;
-    font-size: 1vw;
-    line-height: 20px;
-    margin-right: 1vw;
-    width: 20vw;
+    font-size: 1.0vw;
+    line-height: 1.38vw;
+    justify-content: flex-start;
   }
 
-  #resBut {
-    margin-top: 1vw;
+  #media3 li {
+    margin: 0 0.83vw 0 0;
   }
 
   .button11 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0.5vw;
-    width: 8vw;
-    height: 3vw;
-    border: none;
-    font-style: normal;
+    width: 8.61vw;
+    padding: 0.83vw;
+    height: 4.027vw;
     font-weight: 700;
-    font-size: 1.05vw;
-    line-height: 1;
-    color: white;
+    font-size: 1.18vw;
+    line-height: 1.65vw;
+  }
+
+  .source {
+    left: 10vw;
+    width: 11.041vw;
+  }
+
+  .live {
+    width: 9.3vw;
   }
 
   .rest {
@@ -1188,11 +1178,9 @@ a img:active {
     min-width: 100%;
     max-width: 100%;
     display: grid;
-    grid-template-columns: 1vw 1fr 1fr 1fr 1vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1vw;
-    margin-left: 0;
-    padding: 0;
   }
 
   .desktitbut {
@@ -1210,8 +1198,6 @@ a img:active {
     background-repeat: no-repeat;
     height: 37.5vw;
     width: 31vw;
-    margin-bottom: 2vw;
-    margin-top: 2vw;
   }
 
   #n1 h3,
@@ -1227,7 +1213,6 @@ a img:active {
     background-size: 31vw 37.5vw;
     height: 37.5vw;
     width: 31vw;
-    margin-top: 2vw;
   }
 
   .no_button {
@@ -1241,7 +1226,6 @@ a img:active {
     background-size: 31vw 37.5vw;
     height: 37.5vw;
     width: 31vw;
-    margin-top: 2vw;
   }
 
   #n6 .desktop,
@@ -1258,7 +1242,6 @@ a img:active {
     background-size: 31vw 37.5vw;
     height: 37.5vw;
     width: 31vw;
-    margin-top: 0.5vw;
   }
 
   #n5 {
@@ -1268,7 +1251,6 @@ a img:active {
     background-size: 31vw 37.5vw;
     height: 37.5vw;
     width: 31vw;
-    margin-top: 0.5vw;
   }
 
   #n6 {
@@ -1278,7 +1260,6 @@ a img:active {
     background-size: 31vw 37.5vw;
     height: 37.5vw;
     width: 31vw;
-    margin-top: 0.5vw;
   }
 
   #n1,
@@ -1303,12 +1284,10 @@ a img:active {
   #h3_6 {
     font-size: 3vw;
     line-height: 3vw;
-    padding: 0 2vw 0 2vw;
     height: 6vw;
-    margin-left: 0.5vw;
   }
 
-  #menu_desk > .desktop,
+  #menu_desk>.desktop,
   #about_desk,
   #h3_2,
   #h3_3,
@@ -1318,11 +1297,9 @@ a img:active {
   #but_desk,
   #div_desk {
     display: block;
-    margin-bottom: 0;
   }
 
   .divisor {
-    margin-bottom: 7vw;
     border: none;
   }
 
@@ -1334,11 +1311,9 @@ a img:active {
   }
 
   .desproj1 {
-    margin-top: 2vw;
     font-size: 1.2vw;
     line-height: 2vw;
     height: 3.6vw;
-    margin-left: 0.5vw;
   }
 
   .media2 {
@@ -1346,23 +1321,16 @@ a img:active {
     flex-direction: row;
     list-style: none;
     justify-content: space-between;
-    padding: 0 0.5vw 0 0.5vw;
-    margin-bottom: 2vw;
-    margin-top: 3vw;
     width: 18vw;
-    margin-left: 2vw;
   }
 
   .about {
-    padding: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   #first_about {
-    margin-right: 0;
-    margin-left: 12vw;
     width: 48vw;
   }
 
@@ -1371,22 +1339,18 @@ a img:active {
     font-weight: 400;
     font-size: 4.3vw;
     color: #f55800;
-    margin-bottom: 1vw;
   }
 
   #c_about {
-    margin: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 1.1vw;
     line-height: 2vw;
     max-width: 35vw;
-    padding: 0;
     height: 10vw;
   }
 
   #fit_cont {
-    margin-top: 140px;
     width: 100%;
   }
 
@@ -1394,7 +1358,6 @@ a img:active {
     width: 10vw;
     height: 3vw;
     font-size: 0.9vw;
-    padding: 0 0.5vw 0 0.5vw;
   }
 
   #fit_cont .bgimg2,
@@ -1408,14 +1371,12 @@ a img:active {
     width: 40vw;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-top: 120px;
   }
 
   .div_set {
     border: #979493 solid 1px;
     height: 0.5px;
     width: 80%;
-    margin-left: 10vw;
   }
 
   #more_about {
@@ -1423,13 +1384,10 @@ a img:active {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    padding-top: 146px;
-    margin-left: 2vw;
     height: 100vh;
-    padding-bottom: 20vw;
   }
 
-  #more_about > ul {
+  #more_about>ul {
     width: 30vw;
     height: 2vw;
     font-size: 2vw;
@@ -1444,7 +1402,6 @@ a img:active {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
-    padding-left: 0;
   }
 
   #style1,
@@ -1457,37 +1414,29 @@ a img:active {
     text-align: start;
   }
 
-  #list > li {
+  #list>li {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     text-align: start;
-    margin-top: 1vw;
   }
 
-  #list {
-    margin-left: 5vw;
-  }
+  #list {}
 
   #form_section {
     min-width: 100%;
-    margin-left: 0;
-    padding: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   #form_title {
-    margin-left: 5vw;
     width: 35vw;
-    margin-right: 3vw;
   }
 
   #last_header {
     text-align: start;
-    margin-top: 0;
     font-style: normal;
     font-weight: 700;
     font-size: 2.8vw;
@@ -1499,13 +1448,10 @@ a img:active {
     min-width: 53vw;
     display: flex;
     flex-direction: column;
-    margin-top: 10vw;
   }
 
   .bform {
     line-height: 3vw;
-    margin-top: 3.5vw;
-    padding-bottom: 10px;
   }
 
   #name,
@@ -1530,7 +1476,6 @@ a img:active {
   #lastBotton {
     font-size: 0.9vw;
     line-height: 1vw;
-    margin-right: 1vw;
   }
 
   #error_message {
@@ -1541,7 +1486,6 @@ a img:active {
     border: none;
     width: 100%;
     border-top: solid gray 1px;
-    padding-top: 1.5vw;
   }
 
   #med_desktop {
@@ -1549,7 +1493,6 @@ a img:active {
     flex-direction: row;
     justify-content: space-between;
     flex-grow: 1;
-    margin-bottom: 2.5vw;
   }
 
   #im1,
@@ -1557,8 +1500,8 @@ a img:active {
   #im3,
   #im4,
   #im5 {
-    width: 3.5vw;
-    height: 3.5vm;
+    width: 2.375vw;
+    height: 2.375vw;
   }
 
   #separator2 {
