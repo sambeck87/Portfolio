@@ -166,12 +166,12 @@ header {
   line-height: 6.4vw;
 }
 
-#link-menu-pop li > a {
+#link-menu-pop li>a {
   text-decoration: none;
   color: #fff5e1;
 }
 
-#link-menu-pop li > a:hover {
+#link-menu-pop li>a:hover {
   color: #bbb3a1;
 }
 
@@ -192,7 +192,7 @@ header {
   position: relative;
 }
 
-.content > * {
+.content>* {
   margin: 0 6.3vw;
 }
 
@@ -259,8 +259,8 @@ header {
   padding: 0;
 }
 
-.live > img,
-.source > img {
+.live>img,
+.source>img {
   margin-left: 0.26vw;
 }
 
@@ -334,7 +334,7 @@ a img:active {
   width: 87vw;
 }
 
-#subtitle1 > h5 {
+#subtitle1>h5 {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
@@ -355,7 +355,7 @@ a img:active {
   margin: 0 6.3vw 3.15vw 6.3vw;
 }
 
-#tools1 > ul {
+#tools1>ul {
   display: flex;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -365,7 +365,6 @@ a img:active {
 }
 
 #media3 {
-  width: 45vw;
   list-style: none;
   padding: 0;
   margin: 0 6.3vw 3.2vw 6.3vw;
@@ -624,7 +623,7 @@ a img:active {
   align-items: center;
 }
 
-#more_about > ul {
+#more_about>ul {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -681,7 +680,7 @@ a img:active {
   list-style: none;
 }
 
-#list > li {
+#list>li {
   text-align: center;
 }
 
@@ -1127,7 +1126,7 @@ a img:active {
     width: 6vw;
   }
 
-  #subtitle1 > h5 {
+  #subtitle1>h5 {
     margin: 0 0 1.65vw 0;
     font-size: 2.77vw;
     line-height: 3.6vw;
@@ -1143,12 +1142,16 @@ a img:active {
     color: #091e42;
   }
 
-  #tools1 > ul {
+  #tools1>ul {
     margin: 0 0 1.65vw 0;
     font-weight: 500;
     font-size: 1vw;
     line-height: 1.38vw;
     justify-content: flex-start;
+  }
+
+  .media2 li {
+    margin-right: 0.83vw;
   }
 
   #media3 li {
@@ -1180,7 +1183,6 @@ a img:active {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 1vw;
   }
 
   .desktitbut {
@@ -1194,10 +1196,7 @@ a img:active {
     grid-column: 2;
     grid-row: 1;
     background-image: url("./Images/i1.png");
-    background-size: 31vw 37.5vw;
-    background-repeat: no-repeat;
-    height: 37.5vw;
-    width: 31vw;
+    border: solid black 1px;
   }
 
   #n1 h3,
@@ -1210,9 +1209,7 @@ a img:active {
     grid-column: 3;
     grid-row: 1;
     background-image: url("./Images/i2.png");
-    background-size: 31vw 37.5vw;
-    height: 37.5vw;
-    width: 31vw;
+    margin: 0 1.65vw 1.65vw 1.65vw;
   }
 
   .no_button {
@@ -1223,9 +1220,6 @@ a img:active {
     grid-column: 4;
     grid-row: 1;
     background-image: url("./Images/i3.png");
-    background-size: 31vw 37.5vw;
-    height: 37.5vw;
-    width: 31vw;
   }
 
   #n6 .desktop,
@@ -1239,27 +1233,19 @@ a img:active {
     grid-column: 2;
     grid-row: 2;
     background-image: url("./Images/bg_works.png");
-    background-size: 31vw 37.5vw;
-    height: 37.5vw;
-    width: 31vw;
   }
 
   #n5 {
     grid-column: 3;
     grid-row: 2;
     background-image: url("./Images/i2.png");
-    background-size: 31vw 37.5vw;
-    height: 37.5vw;
-    width: 31vw;
+    margin: 0 1.65vw 0 1.65vw;
   }
 
   #n6 {
     grid-column: 4;
     grid-row: 2;
     background-image: url("./Images/i3.png");
-    background-size: 31vw 37.5vw;
-    height: 37.5vw;
-    width: 31vw;
   }
 
   #n1,
@@ -1271,6 +1257,8 @@ a img:active {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    height: 30.21vw;
+    width: 25.625vw;
   }
 
   .mobile {
@@ -1282,12 +1270,12 @@ a img:active {
   #h3_4,
   #h3_5,
   #h3_6 {
-    font-size: 3vw;
-    line-height: 3vw;
-    height: 6vw;
+    font-size: 2.2vw;
+    line-height: 3.05vw;
+    margin: 0 1.1vw 1.65vw 1.1vw;
   }
 
-  #menu_desk > .desktop,
+  #menu_desk>.desktop,
   #about_desk,
   #h3_2,
   #h3_3,
@@ -1304,27 +1292,26 @@ a img:active {
   }
 
   .bigbutton1 {
+    height: 4.02vw;
     font-size: 1.65vw;
     line-height: 1vw;
-    color: white;
-    text-align: center;
   }
 
   .desproj1 {
-    font-size: 1.2vw;
-    line-height: 2vw;
-    height: 3.6vw;
+    font-size: 1.18vw;
+    line-height: 1.65vw;
+    height: auto;
+    margin: 0 1.1vw 1.65vw 1.1vw;
   }
 
   .media2 {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-between;
-    width: 18vw;
+    margin: 0 0 1.1vw 1.1vw;
   }
 
   .about {
+    position: relative;
+    margin: 6.46vw 0 0 0;
+    padding: 9.03vw 0 0 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1335,23 +1322,29 @@ a img:active {
   }
 
   #t_about {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 4.3vw;
-    color: #f55800;
+    font-size: 4.45vw;
+    line-height: 5.66vw;
+    margin: 0 50.83vw 1.65vw 9.86vw;
+    width: 39.3vw;
   }
 
   #c_about {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.1vw;
-    line-height: 2vw;
-    max-width: 35vw;
-    height: 10vw;
+    width: 39.3vw;
+    margin: 0 50.83vw 3.65vw 9.86vw;
+    font-size: 1.38vw;
+    line-height: 2.2vw;
   }
 
   #fit_cont {
     width: 100%;
+  }
+
+  #button_about {
+    width: 11.18vw;
+    font-size: 1.18vw;
+    line-height: 1.65vw;
+    padding: 0.83vw;
+    margin: 0 78.95vw 9.65vw 9.86vw;
   }
 
   .desktop #button_about {
@@ -1371,33 +1364,33 @@ a img:active {
     width: 40vw;
     background-repeat: no-repeat;
     background-size: contain;
+    top: 6.9vw;
+    right: 0;
+    position: absolute;
   }
 
   .div_set {
     border: #979493 solid 1px;
-    height: 0.5px;
-    width: 80%;
+    width: 80.27vw;
+    margin: 0 9.86vw 10.14vw 9.86vw;
   }
 
   #more_about {
+    margin: 0 9.86vw 0 9.86vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    height: 100vh;
   }
 
-  #more_about > ul {
-    width: 30vw;
-    height: 2vw;
-    font-size: 2vw;
-    line-height: 2vw;
+  #more_about>ul {
+    font-size: 2.2vw;
+    line-height: 3.025vw;
   }
 
   #more_about ul li ul {
     width: 15vw;
-    height: 37vw;
-    font-size: 2vw;
+    font-size: 1.53vw;
     line-height: 5vw;
     display: flex;
     flex-direction: column;
@@ -1408,17 +1401,30 @@ a img:active {
   #style2,
   #style3 {
     list-style-position: inside;
+    margin: 0;
   }
 
-  #style1 {
-    text-align: start;
+  #style2 {
+    margin: 0 15vw 9.86vw 15vw;
   }
 
-  #list > li {
+  #list>li {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+  }
+
+  .first_list_element {
+    margin: 2vw 0 0 0;
+    line-height: 2.96vw;
+  }
+
+  .rest_list_element {
+    margin: 1.5vw 0 0 0;
+    line-height: 2.96vw;
+  }
+
+  #style3 li {
     text-align: start;
   }
 
@@ -1427,36 +1433,55 @@ a img:active {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0;
   }
 
   #form_title {
-    width: 35vw;
+    width: 31.6vw;
+    margin: 9.03vw 1.65vw 8.9vw 9.375vw;
+    align-self: start;
   }
 
   #last_header {
+    margin: 0;
     text-align: start;
-    font-style: normal;
-    font-weight: 700;
     font-size: 2.8vw;
-    line-height: 3vw;
+    line-height: 3.6vw;
   }
 
   #nform {
-    max-width: 53vw;
-    min-width: 53vw;
+    margin: 8.5vw 9.86vw 0 0;
+    width: 47.5vw;
     display: flex;
     flex-direction: column;
   }
 
   .bform {
+    margin: 0 0 1.7vw 0;
+    padding: 0;
     line-height: 3vw;
+  }
+
+  .istyle {
+    height: 4vw;
   }
 
   #name,
   #mail,
   #formMessage {
     color: #0d151e;
-    font-size: 1.5vw;
+    font-size: 1.04vw;
+    line-height: 1.65vw;
+  }
+
+  #formMessage {
+    padding: 0.83vw;
+    height: 7.91vw;
+    margin: 0 0 1vw 0;
+  }
+
+  #uEmail {
+    margin: 0 0 1.65vw 0;
   }
 
   #name::placeholder,
@@ -1472,8 +1497,11 @@ a img:active {
   }
 
   #lastBotton {
-    font-size: 0.9vw;
-    line-height: 1vw;
+    width: 11vw;
+    margin: 0 0 10.7vw 0;
+    font-size: 1.18vw;
+    line-height: 1.65vw;
+    padding: 0.83;
   }
 
   #error_message {
@@ -1487,10 +1515,10 @@ a img:active {
   }
 
   #med_desktop {
+    margin: 1.875vw 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-grow: 1;
   }
 
   #im1,
@@ -1498,13 +1526,11 @@ a img:active {
   #im3,
   #im4,
   #im5 {
-    width: 2.375vw;
-    height: 2.375vw;
+    width: 3.375vw;
+    height: 3.375vw;
   }
 
   #separator2 {
-    border: solid 1px rgb(187, 182, 182);
-    bottom: 10vw;
-    width: 100%;
+    display: none;
   }
 }
