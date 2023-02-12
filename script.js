@@ -76,7 +76,7 @@ const allData = [
       },
       image: './Images/project3.png',
       description:
-        "Crypto Currency is a SPA that obtains information on the 100 most important cryptocurrencies worldwide and displays it for viewing",
+        'Crypto Currency is a SPA that obtains information on the 100 most important cryptocurrencies worldwide and displays it for viewing',
       source: 'https://github.com/sambeck87/React_capstone',
       live: 'https://crypto-currency-zbah.onrender.com/',
     },
@@ -92,7 +92,7 @@ const allData = [
       },
       image: './Images/project4.png',
       description:
-        "This is a website that contains variour ships, and missions that you can join and reserve",
+        'This is a website that contains variour ships, and missions that you can join and reserve',
       source: 'https://github.com/sambeck87/react_redux_project',
       live: 'https://space-travelers-fm7x.onrender.com/',
     },
@@ -108,7 +108,7 @@ const allData = [
       },
       image: './Images/project5.png',
       description:
-        "Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA).",
+        'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA).',
       source: 'https://github.com/sambeck87/Math-magicians',
       live: 'https://calculator-ipex.onrender.com/',
     },
@@ -124,7 +124,7 @@ const allData = [
       },
       image: './Images/project6.png',
       description:
-        "The Pokedex project is an application that fetches data from a pokemon API and displays it. You can like and get more information about a pokemon.",
+        'The Pokedex project is an application that fetches data from a pokemon API and displays it. You can like and get more information about a pokemon.',
       source: 'https://github.com/sambeck87/group-capstone-project',
       live: 'https://sambeck87.github.io/group-capstone-project/',
     },
