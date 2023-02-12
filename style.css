@@ -1242,7 +1242,7 @@ a img:active {
   #n4 {
     grid-column: 2;
     grid-row: 2;
-    background-image: url("./Images/bg4.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("./Images/bg4.png");
   }
 
   #n5 {
