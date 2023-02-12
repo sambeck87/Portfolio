@@ -443,6 +443,10 @@ a img:active {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("./Images/bg3.png");
 }
 
+#n4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("./Images/bg4.png");
+}
+
 #n5 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("./Images/bg5.png");
 }

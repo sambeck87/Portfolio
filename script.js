@@ -90,11 +90,11 @@ const allData = [
         1: 'Redux',
         2: 'JavaScript',
       },
-      image: './Images/project4.jpg',
+      image: './Images/project4.png',
       description:
         "This is a website that contains variour ships, and missions that you can join and reserve",
-      source: '#',
-      live: '#',
+      source: 'https://github.com/sambeck87/react_redux_project',
+      live: 'https://space-travelers-fm7x.onrender.com/',
     },
   },
   {
