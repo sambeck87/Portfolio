@@ -40,7 +40,8 @@ const allData = [
       tools: {
         0: 'Ruby',
         1: 'Rails',
-        2: 'Bootstrap',
+        2: 'PostgreSQL',
+        3: 'Bootstrap',
       },
       image: './Images/RoR.jpg',
       description:
