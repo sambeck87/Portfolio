@@ -36,17 +36,17 @@ const allData = [
   },
   {
     data2: {
-      title: 'Profesional Art Printing Data',
+      title: 'My Salary Manager App',
       tools: {
-        0: 'html',
-        1: 'Bootstrap',
-        2: 'Ruby',
+        0: 'Ruby',
+        1: 'Rails',
+        2: 'Bootstrap',
       },
-      image: './Images/project1.jpeg',
+      image: './Images/RoR.jpg',
       description:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-      source: '#',
-      live: '#',
+        "This app allows you to manage your budget, you have a list of transactions associated with a category; You'll able to see how much money you spent.",
+      source: 'https://github.com/sambeck87/Budget_app',
+      live: 'https://salary-manager.onrender.com',
     },
   },
   {

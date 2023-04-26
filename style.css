@@ -434,6 +434,10 @@ a img:active {
   margin: 0 6.3vw 6.3vw 6.4vw;
 }
 
+#n1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("./Images/RoR1.png");
+}
+
 #n3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("./Images/bg3.png");
 }
@@ -1205,7 +1209,7 @@ a img:active {
   #n1 {
     grid-column: 2;
     grid-row: 1;
-    background-image: url("./Images/i1.png");
+    background-image: url("./Images/RoR1.png");
     border: solid black 1px;
   }
 
