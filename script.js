@@ -22,9 +22,9 @@ const allData = [
       title: 'My Recent Works',
       subtitle: 'Multi-Post Stories',
       tools: {
-        0: 'css',
-        1: 'html',
-        2: 'bootstrap',
+        0: 'CSS3',
+        1: 'HTML5',
+        2: 'Bootstrap',
         3: 'Ruby',
       },
       image: './Images/Snapshoot Portfolio.png',
@@ -52,22 +52,6 @@ const allData = [
   },
   {
     data3: {
-      title: 'Data Dashboard Healthcare',
-      mobileTitle: 'Profesional Art Printing Data',
-      tools: {
-        0: 'html',
-        1: 'Bootstrap',
-        2: 'Ruby',
-      },
-      image: './Images/project2.png',
-      description:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-      source: '#',
-      live: '#',
-    },
-  },
-  {
-    data4: {
       title: 'Crypto Currency',
       mobileTitle: 'SPA Crypto Currency',
       tools: {
@@ -83,7 +67,7 @@ const allData = [
     },
   },
   {
-    data5: {
+    data4: {
       title: 'Space Travelers',
       mobileTitle: "Space Travelers' Hub",
       tools: {
@@ -99,8 +83,8 @@ const allData = [
     },
   },
   {
-    data6: {
-      title: 'Math magicians',
+    data5: {
+      title: 'Math Magicians',
       mobileTitle: 'A website for mathematics fans',
       tools: {
         0: 'React',
@@ -115,7 +99,7 @@ const allData = [
     },
   },
   {
-    data7: {
+    data6: {
       title: 'Pokedex',
       mobileTitle: 'A pokemon lovers app',
       tools: {
@@ -128,6 +112,22 @@ const allData = [
         'The Pokedex project is an application that fetches data from a pokemon API and displays it. You can like and get more information about a pokemon.',
       source: 'https://github.com/sambeck87/group-capstone-project',
       live: 'https://sambeck87.github.io/group-capstone-project/',
+    },
+  },
+  {
+    data7: {
+      title: 'THE BEST OF GHIBLI STUDIO',
+      mobileTitle: 'THE BEST OF GHIBLI STUDIO 2023',
+      tools: {
+        0: 'JavaScript',
+        1: 'CSS3',
+        2: 'HTML5',
+      },
+      image: './Images/ghibli.png',
+      description:
+        "The_best_ghibli is a project created in honor to Ghibli Studio. This project implemented the best practices for HTML, CSS, and JavaScript",
+      source: 'https://github.com/sambeck87/The_best_ghibli',
+      live: 'https://sambeck87.github.io/The_best_ghibli/',
     },
   },
 ];
