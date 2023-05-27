@@ -20,18 +20,18 @@ const allData = [
   {
     data1: {
       title: 'My Recent Works',
-      subtitle: 'Multi-Post Stories',
+      subtitle: 'Damian Sastré Presenta',
       tools: {
-        0: 'CSS3',
-        1: 'HTML5',
-        2: 'Bootstrap',
-        3: 'Ruby',
+        0: 'React',
+        1: 'Redux',
+        2: 'JavaScript',
+        3: 'Bootstrap',
       },
-      image: './Images/Snapshoot Portfolio.png',
+      image: './Images/last_show.png',
       description:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-      source: 'https://www.google.com/',
-      live: 'https://www.facebook.com/',
+        "Minimalistic page displaying the most recent narratives of writer-actor Damián Santré, directly taken from the Spotify API. In the Podcast section, you will find a list of all his episodes. You can search to see if he has narrated your favorite story or anything by a writer you admire using the search bar.",
+      source: 'https://github.com/sambeck87/damian_sastre_presenta',
+      live: 'https://damian-sastre-presenta.onrender.com/',
     },
   },
   {
@@ -178,14 +178,14 @@ container.innerHTML = `<div class="resent_project white_back_groud">
 </div>
 <div class="recent_content">
   <div class="contain_rp">
-    <img id="placehold" src="./Images/Img Placeholder.png" alt="placeholder">
+    <img id="placehold" src="./Images/last_main.png" alt="placeholder">
   </div>
   <div id="text_resent">
     <div id="subtitle1">
       <h5>${allData[0].data1.subtitle}</h5>
     </div>
     <div id="description1">
-      <p>${allData[0].data1.description}</p>
+      <p class="last_project_description">${allData[0].data1.description}</p>
     </div>
     <div id="tools1">
       <ul id="media3">

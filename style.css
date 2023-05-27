@@ -162,12 +162,12 @@ header {
   line-height: 6.4vw;
 }
 
-#link-menu-pop li > a {
+#link-menu-pop li>a {
   text-decoration: none;
   color: #fff5e1;
 }
 
-#link-menu-pop li > a:hover {
+#link-menu-pop li>a:hover {
   color: #bbb3a1;
 }
 
@@ -188,7 +188,7 @@ header {
   position: relative;
 }
 
-.content > * {
+.content>* {
   margin: 0 6.3vw;
 }
 
@@ -255,8 +255,8 @@ header {
   padding: 0;
 }
 
-.live > img,
-.source > img {
+.live>img,
+.source>img {
   margin-left: 0.26vw;
 }
 
@@ -330,7 +330,7 @@ a img:active {
   width: 87vw;
 }
 
-#subtitle1 > h5 {
+#subtitle1>h5 {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
@@ -351,7 +351,7 @@ a img:active {
   margin: 0 6.3vw 3.15vw 6.3vw;
 }
 
-#tools1 > ul {
+#tools1>ul {
   display: flex;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -536,7 +536,7 @@ a img:active {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 3.46vw;
+  font-size: 3vw;
   line-height: 4.26vw;
   display: flex;
   justify-content: center;
@@ -640,7 +640,7 @@ a img:active {
   align-items: center;
 }
 
-#more_about > ul {
+#more_about>ul {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -697,7 +697,7 @@ a img:active {
   list-style: none;
 }
 
-#list > li {
+#list>li {
   text-align: center;
 }
 
@@ -1143,7 +1143,7 @@ a img:active {
     width: 6vw;
   }
 
-  #subtitle1 > h5 {
+  #subtitle1>h5 {
     margin: 0 0 1.65vw 0;
     font-size: 2.77vw;
     line-height: 3.6vw;
@@ -1159,7 +1159,13 @@ a img:active {
     color: #091e42;
   }
 
-  #tools1 > ul {
+
+  .last_project_description {
+    height: 11.5vw;
+    overflow-x: scroll;
+  }
+
+  #tools1>ul {
     margin: 0 0 1.65vw 0;
     font-weight: 500;
     font-size: 1vw;
@@ -1293,7 +1299,7 @@ a img:active {
     margin: 0 1.1vw 1.65vw 1.1vw;
   }
 
-  #menu_desk > .desktop,
+  #menu_desk>.desktop,
   #about_desk,
   #h3_2,
   #h3_3,
@@ -1401,7 +1407,7 @@ a img:active {
     align-items: flex-start;
   }
 
-  #more_about > ul {
+  #more_about>ul {
     font-size: 2.2vw;
     line-height: 3.025vw;
   }
@@ -1426,7 +1432,7 @@ a img:active {
     margin: 0 15vw 9.86vw 15vw;
   }
 
-  #list > li {
+  #list>li {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
