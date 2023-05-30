@@ -24,7 +24,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Install
 - Go to this repo and copy the project link
-        https://github.com/sambeck87/setup_and_mobile_first
+        https://github.com/sambeck87/Portfolio
 - Open your terminal and clone the repo with this command "git clone https://github.com/sambeck87/Setup and mobile-first.git"
 - Now, you have a copy on your pc. 
 - To open it, make double-click on the HTML file.
