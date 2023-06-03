@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -11,6 +12,98 @@ header {
   background-color: #3c3a39;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+.content .information,
+.content .media {
+  transform: translateX(-100%);
+  animation: slideIn 2s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes parallax {
+  0% {
+    background-position: center top;
+  }
+
+  100% {
+    background-position: center bottom;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.w100 {
+  width: 100%;
+}
+
+.slide-in-animation {
+  animation: slide-in 0.5s forwards;
+}
+
+.slide-out-animation {
+  animation: slide-out 0.5s forwards;
+}
+
+.content .media img {
+  transition: transform 0.5s;
+}
+
+.content .media img:hover {
+  transform: rotate(360deg);
 }
 
 .window_card {
@@ -117,15 +210,9 @@ header {
   height: 3.2vw;
 }
 
-.btn-menu-pop:hover {
-  border: 0.53vw solid #fff5e1;
-  border-radius: 1.33vw;
-}
-
-.btn-menu-pop:active {
-  color: #706c63;
-  border: 0.53vw solid #706c63;
-  border-radius: 1.33vw;
+#x-close:hover {
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
 }
 
 #link-menu-pop {
@@ -219,6 +306,8 @@ header {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   margin: 0;
+  height: 32.5vw;
+  overflow-y: scroll;
 }
 
 .menu {
@@ -236,6 +325,10 @@ header {
   flex-direction: row;
   list-style: none;
   justify-content: flex-start;
+}
+
+.media li {
+  margin: 0 2vw;
 }
 
 .bgimg {
@@ -384,12 +477,13 @@ a img:active {
   color: white;
   padding: 3.2vw;
   margin: 0 6.3vw 6.3vw 6.3vw;
+  transition: background-color 0.5s;
 }
 
 .button11:hover {
   color: #f55800;
-  background: #fff5e1;
-  border: 0.26vw solid #f55800;
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
 }
 
 .button11:active {
@@ -431,37 +525,90 @@ a img:active {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 6.3vw 6.3vw 6.4vw;
+  position: relative;
+  overflow-x: hidden;
 }
 
 #n1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("./Images/RoR1.png");
 }
 
+#n1:hover {
+  background-image: url("./Images/RoR1.png");
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
 #n2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("./Images/bg3.png");
+}
+
+#n2:hover {
+  background-image: url("./Images/bg3.png");
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 #n3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("./Images/bg4.png");
 }
 
+#n3:hover {
+  background-image: url("./Images/bg4.png");
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
 #n4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("./Images/bg5.png");
+}
+
+#n4:hover {
+  background-image: url("./Images/bg5.png");
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 #n5 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("./Images/bg7.png");
 }
 
+#n5:hover {
+  background-image: url("./Images/bg7.png");
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
 #n6 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("./Images/ghibli2.png");
 }
 
-.desktitbut {
-  border: none;
-  background-color: transparent;
-  color: white;
-  text-align: start;
+#n6:hover {
+  background-image: url("./Images/ghibli2.png");
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+#n1:hover h3,
+#n1:hover p,
+#n1:hover ul,
+#n2:hover h3,
+#n2:hover p,
+#n2:hover ul,
+#n3:hover h3,
+#n3:hover p,
+#n3:hover ul,
+#n4:hover h3,
+#n4:hover p,
+#n4:hover ul,
+#n5:hover h3,
+#n5:hover p,
+#n5:hover ul,
+#n6:hover h3,
+#n6:hover p,
+#n6:hover ul {
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 .cont_rest {
@@ -503,12 +650,13 @@ a img:active {
   height: 12.8vw;
   width: 100%;
   padding: 3.2vw 0;
+  transition: background-color 0.5s;
 }
 
 .bigbutton1:hover {
   color: #f55800;
   background: #fff5e1;
-  border: 0.25vw solid #f55800;
+  border: 2px solid #f55800;
 }
 
 .bigbutton1:active {
@@ -601,12 +749,13 @@ a img:active {
   text-align: center;
   margin: 0 0 55.73vw 6.4vw;
   padding: 3.2vw;
+  transition: background-color 0.5s;
 }
 
 #button_about:hover {
   color: #f55800;
   background: #fff5e1;
-  border: 0.26vw solid #f55800;
+  border: 1px solid #f55800;
 }
 
 #button_about:active {
@@ -736,6 +885,11 @@ a img:active {
   margin: 32vw 6.4vw 9vw 6.4vw;
 }
 
+#last_header {
+  overflow: hidden;
+  /* Oculta el texto que aún no se ha mostrado */
+}
+
 .bform {
   border-bottom: #dbd8d7 solid 0.26vw;
   display: flex;
@@ -787,12 +941,13 @@ a img:active {
   justify-content: center;
   letter-spacing: 0.128vw;
   width: 36vw;
+  transition: background-color 0.5s;
 }
 
 #lastBotton:hover {
   color: #f55800;
   background: #fff5e1;
-  border: 0.26vw solid #f55800;
+  border: 1px solid #f55800;
 }
 
 #lastBotton:active {
@@ -822,6 +977,15 @@ a img:active {
   border-radius: 2.6vw;
   width: 35.7vw;
   margin: 6.4vw 0 2.13vw 0;
+}
+
+#im1,
+#im2,
+#im3,
+#im4,
+#im5 {
+  width: 5.375vw;
+  height: 5.375vw;
 }
 
 .desktop {
@@ -990,6 +1154,11 @@ a img:active {
     margin-left: 2.2vw;
     line-height: 1.38vw;
     text-decoration: none;
+    transition: color 0.5s;
+  }
+
+  #menu_desk a:hover {
+    color: #ff6b00;
   }
 
   #img_mail {
@@ -1053,6 +1222,8 @@ a img:active {
     font-weight: 400;
     font-size: 1.38vw;
     line-height: 3.2vw;
+    height: 15.5vw;
+    overflow-y: scroll;
   }
 
   .cont1 {
@@ -1162,7 +1333,7 @@ a img:active {
 
   .last_project_description {
     height: 11.5vw;
-    overflow-x: scroll;
+    overflow-y: scroll;
   }
 
   #tools1>ul {
@@ -1210,9 +1381,10 @@ a img:active {
 
   .desktitbut {
     border: none;
-    background-color: transparent;
-    color: white;
-    text-align: start;
+    background-color: rgba(202, 21, 21, 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
   }
 
   #n1 {
@@ -1281,7 +1453,7 @@ a img:active {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    height: 30.21vw;
+    height: 34.16vw;
     width: 25.625vw;
   }
 
@@ -1550,8 +1722,9 @@ a img:active {
   #im3,
   #im4,
   #im5 {
-    width: 3.375vw;
-    height: 3.375vw;
+    width: 2.375vw;
+    height: 2.375vw;
+    margin-bottom: 1vw;
   }
 
   #separator2 {

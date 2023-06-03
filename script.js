@@ -1,18 +1,26 @@
 const btnMenu = document.querySelector('#menu-link');
 function displayMenu() {
   const menu = document.querySelector('#menu-mobile');
-  menu.classList.toggle('display-off');
+  menu.classList.remove('display-off');
+  menu.classList.add('slide-in-animation');
+  menu.classList.remove('slide-out-animation');
 }
 btnMenu.addEventListener('click', displayMenu);
 
+const btnclose = document.querySelector('#btn-close');
+const links_close = document.querySelectorAll('.close');
 function closeMenu() {
   const menu = document.querySelector('#menu-mobile');
-  menu.classList.toggle('display-off');
+  menu.classList.add('slide-out-animation');
+  menu.classList.remove('slide-in-animation');
 }
 
-document.querySelectorAll('.close').forEach((l) => {
-  l.addEventListener('click', closeMenu);
+links_close.forEach((link) => {
+  link.addEventListener('click', closeMenu);
 });
+
+
+btnclose.addEventListener('click', closeMenu);
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -132,6 +140,24 @@ const allData = [
   },
 ];
 
+btnMenu.addEventListener('click', () => {
+  btnMenu.classList.add('active');
+});
+
+const menuMobile = document.querySelector('#menu-mobile');
+const menuItems = document.querySelectorAll('.menu-item');
+
+menuItems.forEach((item, index) => {
+  item.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  const mainContent = document.querySelector('.main-content');
+  mainContent.style.opacity = 0;
+  mainContent.style.animation = 'fadeIn 1s forwards';
+});
+
+
 let restProjects = '';
 let cardNumber = 0;
 let number = 0;
@@ -146,11 +172,11 @@ for (let i = 2; i <= 6; i += 1) {
   const thirdTool = allData[i][cardNumber].tools[2];
 
   restProjects += `<div class="pj11" id="n${i}">
+  <button class="projects desktitbut" type="button" onclick="project${number}()">
+  </button>
   <div class="cont_rest">
     <h3 class="tproj1 mobile">${mobileTitl}</h3>
-    <button class="projects desktitbut" type="button" onclick="project${number}()">
     <h3 class="tproj1 desktop" id="h3_2">${titleCards}</h3>
-  </button>
     <p class="desproj1">${descriptionCards}</p>
     <ul class="media2">
       <li>
@@ -297,16 +323,19 @@ function filling() {
 
 <div class="text-card">
   <p class="description-card">${allData[numberCard][project].description}</p>
-  <a href="${allData[numberCard][project].live}" class="live button11">See Live<img src="./Images/livebut.png" alt="live-icon"></a>
-  <a href="${allData[numberCard][project].source}" class="source button11">See Source <img src="./Images/gitbut.png" alt="git-icon"></a>
+  <a href="${allData[numberCard][project].live}" class="live button11" target="_blank">See Live<img src="./Images/livebut.png" alt="live-icon"></a>
+  <a href="${allData[numberCard][project].source}" class="source button11" target="_blank">See Source <img src="./Images/gitbut.png" alt="git-icon"></a>
 </div>`;
   const projectCard = document.querySelector('#pop-card');
-  projectCard.classList.toggle('display-off');
+  projectCard.classList.remove('display-off');
+  projectCard.classList.add('slide-in-animation');
+  projectCard.classList.remove('slide-out-animation');
 
   const close = document.querySelector('#close-card');
   function closePop() {
     const projectCard = document.querySelector('#pop-card');
-    projectCard.classList.toggle('display-off');
+    projectCard.classList.add('slide-out-animation');
+    projectCard.classList.remove('slide-in-animation');
   }
   close.addEventListener('click', closePop);
 }
@@ -355,4 +384,49 @@ if (getData != null) {
   names.value = getData.userName;
   formMail.value = getData.userMail;
   text.value = getData.userMessage;
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const projects = entry.target.querySelectorAll('.pj11');
+      projects.forEach((project) => {
+        project.style.opacity = 0;
+        project.style.animation = 'fadeIn 3s forwards';
+      });
+    }
+  });
+});
+
+const sectionToObserve = document.querySelector('.rest');
+
+observer.observe(sectionToObserve);
+
+var formObserver = new IntersectionObserver(function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      startTypingAnimation();
+      formObserver.unobserve(entry.target);
+    }
+  });
+});
+
+var formSection = document.getElementById("form_section");
+formObserver.observe(formSection);
+
+function startTypingAnimation() {
+  var titleElement = document.getElementById("last_header");
+  var text = "I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.";
+  var index = 0;
+
+  function typeText() {
+    titleElement.textContent += text[index];
+    index++;
+
+    if (index < text.length) {
+      setTimeout(typeText, 100);
+    }
+  }
+
+  typeText();
 }
