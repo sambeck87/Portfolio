@@ -18,6 +18,14 @@ button {
   cursor: pointer;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
 .content .information,
 .content .media {
   transform: translateX(-100%);
@@ -122,6 +130,7 @@ button {
   background-color: #fff;
   overflow-y: scroll;
   margin: 16vw 4.26vw 8.26vw 4.26vw;
+  border-radius: 10px;
 }
 
 .title-card {
@@ -147,7 +156,11 @@ button {
 .img-card {
   margin: 0 4.26vw 6.4vw 4.26vw;
   width: 82.93vw;
-  height: 58vw;
+}
+
+.desktop_image {
+  width: 82vw;
+  height: auto;
 }
 
 .text-card {
@@ -226,6 +239,12 @@ button {
 
 .media2 li {
   margin-right: 4.26vw;
+}
+
+#contbut {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 #link-menu-pop li {
@@ -398,6 +417,16 @@ a img:active {
   background-color: white;
 }
 
+.contain_rp:hover img {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.contain_rp:hover {
+  background-image: url("./Images/damian.gif");
+  background-size: contain;
+}
+
 #placehold {
   width: 87vw;
   margin: 0 6.3vw 6.3vw 6.3vw;
@@ -534,7 +563,7 @@ a img:active {
 }
 
 #n1:hover {
-  background-image: url("./Images/RoR1.png");
+  background-image: url("./Images/RoR.gif");
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
 }
@@ -544,7 +573,7 @@ a img:active {
 }
 
 #n2:hover {
-  background-image: url("./Images/bg3.png");
+  background-image: url("./Images/crypto.gif");
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
 }
@@ -554,7 +583,7 @@ a img:active {
 }
 
 #n3:hover {
-  background-image: url("./Images/bg4.png");
+  background-image: url("./Images/space.gif");
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
 }
@@ -564,7 +593,7 @@ a img:active {
 }
 
 #n4:hover {
-  background-image: url("./Images/bg5.png");
+  background-image: url("./Images/math.gif");
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
 }
@@ -574,7 +603,7 @@ a img:active {
 }
 
 #n5:hover {
-  background-image: url("./Images/bg7.png");
+  background-image: url("./Images/poke.gif");
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
 }
@@ -584,7 +613,7 @@ a img:active {
 }
 
 #n6:hover {
-  background-image: url("./Images/ghibli2.png");
+  background-image: url("./Images/ghibli.gif");
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
 }
@@ -628,7 +657,7 @@ a img:active {
 }
 
 .desproj1 {
-  height: 23.2vw;
+  height: 30vw;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -737,18 +766,27 @@ a img:active {
   margin: 0 6.4vw 6.4vw 6.4vw;
 }
 
+.contact_buttons {
+  display: flex;
+}
+
+.resume_button {
+  width: 32vw;
+}
+
 #button_about {
+  width: 30vw;
   border: none;
   background: #ff6b00;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 4.53vw;
+  font-size: 3vw;
   line-height: 6.4vw;
   color: white;
   text-align: center;
   margin: 0 0 55.73vw 6.4vw;
-  padding: 3.2vw;
+  padding: 0.5rem;
   transition: background-color 0.5s;
 }
 
@@ -1101,14 +1139,16 @@ a img:active {
   .img-card {
     margin: 0 1.65vw 1.875vw 1.65vw;
     width: 45.76vw;
-    height: 31.1vw;
+  }
+
+  .desktop_image {
+    width: 45vw;
   }
 
   .text-card {
     position: relative;
     margin: 11.83vw 1.65vw 2.25vw 0;
     width: 29.4vw;
-    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1118,6 +1158,8 @@ a img:active {
   .description-card {
     font-size: 1.11vw;
     line-height: 2.08vw;
+    height: 26vw;
+    overflow-y: scroll;
   }
 
   .live,
@@ -1301,9 +1343,14 @@ a img:active {
   }
 
   #placehold {
-    margin: 0 0 1.65vw 0;
+    margin: 0;
     height: 31.1vw;
     width: 47.5vw;
+    overflow-y: hidden;
+  }
+
+  .contain_rp {
+    margin-bottom: 1.65vw;
   }
 
   #text_resent {
@@ -1540,7 +1587,16 @@ a img:active {
     font-size: 1.18vw;
     line-height: 1.65vw;
     padding: 0.83vw;
-    margin: 0 78.95vw 9.65vw 9.86vw;
+    margin: 0 0 9.65vw 0;
+  }
+
+  .contact_buttons {
+    display: flex;
+  }
+
+  .resume_button {
+    width: 11vw;
+    margin: 0 1vw 9.65vw 9.86vw;
   }
 
   .desktop #button_about {

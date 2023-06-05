@@ -37,7 +37,9 @@ const allData = [
       },
       image: './Images/last_show.png',
       description:
-        "Minimalistic page displaying the most recent narratives of writer-actor Damián Santré, directly taken from the Spotify API. In the Podcast section, you will find a list of all his episodes. You can search to see if he has narrated your favorite story or anything by a writer you admire using the search bar.",
+        "Minimalistic page displaying the most recent narratives of writer-actor Damián Sastré, directly sourced from the Spotify API. In the Podcast section, you will find a list of all his episodes. You can search to see if he has narrated your favorite story or anything by a writer you admire using the search bar.",
+      fullDescription:
+        "<p class='mt-0'>Damián Sastré Presents is a Single Page Application (SPA) designed to promote Damian's Spotify podcast. On this page, you can learn more about the writer and actor, Damián Sastré, and discover why he decided to embark on this awesome project.</p> <p>This application offers the following features:</p> <ul> <li>View the latest story published on his podcast.</li><li>Explore the most recent 'Rapidín' episode released on his podcast.</li> <li>Access the complete list of chapters.</li> <li>Discover all the platforms where you can find his content.</li> <li>Filter and search for a specific episode by title or author.</li> <li>Connect with Damian by using a form to send him a message.</li></ul>",
       source: 'https://github.com/sambeck87/damian_sastre_presenta',
       live: 'https://damian-sastre-presenta.onrender.com/',
     },
@@ -51,9 +53,10 @@ const allData = [
         2: 'PostgreSQL',
         3: 'Bootstrap',
       },
-      image: './Images/RoR.jpg',
+      image: './Images/RoR.png',
       description:
-        "This app allows you to manage your budget, you have a list of transactions associated with a category; You'll able to see how much money you spent.",
+        "This app allows you to manage your budget. You have a list of transactions associated with categories, and you'll be able to see how much money you have spent.",
+      fullDescription: "<p class='mt-0'>The Salary Manager app enables you to effectively manage your budget. You can access a list of transactions categorized by different categories, allowing you to track your expenses and understand where your money is being spent.</p><p>Key features of this project include:</p><ul> <li>User creation</li><li>Category creation</li><li>Deletion of categories</li><li>Displaying a list of categories</li><li>Tracking the total amount spent</li><li>Analyzing the amount spent per category</li><li>Transaction creation</li><li>Displaying a list of transactions</li><li>Analyzing the amount spent per transaction</li></ul> <p>With the Salary Manager app, you can take control of your finances and gain valuable insights into your spending habits.</p>",
       source: 'https://github.com/sambeck87/Budget_app',
       live: 'https://salary-manager.onrender.com',
     },
@@ -69,7 +72,9 @@ const allData = [
       },
       image: './Images/project3.png',
       description:
-        'Crypto Currency is a SPA that obtains information on the 100 most important cryptocurrencies worldwide and displays it for viewing',
+        '"Crypto Currency" is a Single Page Application (SPA) that retrieves information on the top 100 most significant cryptocurrencies worldwide and displays it for viewing.',
+      fullDescription:
+        "<p class='mt-0'>'Crypto Currency' is a Single Page Application(SPA) that fetches information on the top 100 most important cryptocurrencies worldwide and displays it for viewing.This application offers the following features:</p><ul><li>Displaying the name, symbol, icon, and current dollar price of each cryptocurrency on the main page.</li><li>Performing a search for specific cryptocurrencies using a text entry.</li><li>Clicking on a desired cryptocurrency opens another page where you can explore more detailed information about it.</li></ul><p>With 'Crypto Currency', you can easily stay updated on the latest information and trends in the world of cryptocurrencies.</p>",
       source: 'https://github.com/sambeck87/React_capstone',
       live: 'https://crypto-currency-zbah.onrender.com/',
     },
@@ -85,7 +90,8 @@ const allData = [
       },
       image: './Images/project4.png',
       description:
-        'This is a website that contains variour ships, and missions that you can join and reserve',
+        'This is a website that contains various ships and missions that you can join and reserve.',
+      fullDescription: "<p class='mt-0'>Space Travelers' Hub is a website that features various ships and missions that you can join and reserve. Each ship and mission comes with its own description, providing you with detailed information to learn more about them. This project offers the following functionalities:</p><ul><li>Displaying a list of available ships.</li><li>Presenting a list of joinable missions.</li><li>Allowing you to reserve ships and join missions.</li><li>Providing the option to cancel reservations and leave missions.</li></ul><p>With Space Travelers' Hub, you can explore exciting opportunities in space travel and actively participate in interstellar adventures.</p>",
       source: 'https://github.com/sambeck87/react_redux_project',
       live: 'https://space-travelers-fm7x.onrender.com/',
     },
@@ -101,7 +107,8 @@ const allData = [
       },
       image: './Images/project5.png',
       description:
-        'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA).',
+        'Math Magicians is a Single Page Application (SPA) designed for all mathematics enthusiasts.',
+      fullDescription: "<p class='mt-0'>Math Magicians is a website created for all mathematics enthusiasts. It serves as a Single Page Application (SPA) that provides users with the following features:</p> <ul><li>Perform simple calculations.</li><li>Explore random math-related quotes.</li></ul><p>With Math Magicians, users can enjoy engaging in mathematical calculations and gain inspiration from insightful quotes related to the world of mathematics.</p>",
       source: 'https://github.com/sambeck87/Math-magicians',
       live: 'https://calculator-ipex.onrender.com/',
     },
@@ -117,7 +124,8 @@ const allData = [
       },
       image: './Images/project6.png',
       description:
-        'The Pokedex project is an application that fetches data from a pokemon API and displays it. You can like and get more information about a pokemon.',
+        'The Pokédex project is an application that retrieves data from a Pokémon API and displays it. You can like Pokémon and obtain more information about them.',
+      fullDescription: "<p class='mt-0'>This group capstone project focuses on utilizing the Pokémon API to showcase the first 20 Pokémon on the main page. Each Pokémon is displayed with its name and image.</p><p>We have implemented a 'like' function that stores the information in the 'Involvement API'. Later, this API is called to retrieve the stored information and display it, including the number of likes for each Pokémon.</p><p>Furthermore, we have added a button that opens a popup, providing a more detailed view of the selected Pokémon's characteristics. Within this popup, users can read comments from others and create their own comments, all thanks to the integration of the Involvement API.</p><p>To ensure proper functionality, we have created two tests. These tests verify the accuracy of the comment count and the display of Pokémon within the Document Object Model (DOM).</p><p>This capstone project aims to provide an engaging and interactive experience for Pokémon enthusiasts, allowing them to explore and interact with Pokémon data in a user-friendly manner.</p>",
       source: 'https://github.com/sambeck87/group-capstone-project',
       live: 'https://sambeck87.github.io/group-capstone-project/',
     },
@@ -133,7 +141,8 @@ const allData = [
       },
       image: './Images/ghibli.png',
       description:
-        "The_best_ghibli is a project created in honor to Ghibli Studio. This project implemented the best practices for HTML, CSS, and JavaScript",
+        "'The_Best_Ghibli' is a project created in honor of Studio Ghibli. This project implements best practices for HTML, CSS, and JavaScript.",
+      fullDescription: "<p class='mt-0'>'The_Best_Ghibli' is a project that showcases the knowledge I have acquired over the course of four weeks. It incorporates best practices for HTML, CSS, and JavaScript, and incorporates various typographies, colors, and background images in its sections. The project is designed to be accessible on both mobile and desktop devices. Its content is responsive and adapts to different screen sizes, with a breakpoint at 768px to reposition elements as needed.</p><p>Users can interact with links and buttons throughout the project, which feature hover effects for enhanced interactivity. Additionally, 'The_Best_Ghibli' includes a mobile menu window, enabling seamless interaction on smaller screens.</p><p>The 'speakers' section is dynamically created using JavaScript, utilizing an object to retrieve content and populate the information.</p><p>This project serves as a demonstration of my skills and understanding of web development, showcasing my ability to implement various techniques and features in a responsive and interactive manner.</p>",
       source: 'https://github.com/sambeck87/The_best_ghibli',
       live: 'https://sambeck87.github.io/The_best_ghibli/',
     },
@@ -318,11 +327,15 @@ function filling() {
     ${lis}
     </ul>
   </div>
-  <img class="img-card" src="${allData[numberCard][project].image}" alt="Image-card">
+  <div class="img-card">
+    <p class="text-center">
+      <img class="desktop_image" src="${allData[numberCard][project].image}" alt="Image-card">
+    </p>
+  </div>
 </div>
 
 <div class="text-card">
-  <p class="description-card">${allData[numberCard][project].description}</p>
+  <div class="description-card">${allData[numberCard][project].fullDescription}</div>
   <a href="${allData[numberCard][project].live}" class="live button11" target="_blank">See Live<img src="./Images/livebut.png" alt="live-icon"></a>
   <a href="${allData[numberCard][project].source}" class="source button11" target="_blank">See Source <img src="./Images/gitbut.png" alt="git-icon"></a>
 </div>`;
@@ -416,7 +429,7 @@ formObserver.observe(formSection);
 
 function startTypingAnimation() {
   var titleElement = document.getElementById("last_header");
-  var text = "I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.";
+  var text = "Got an exciting project in mind? Don't hold back! Shoot me a message and let's have a blast bringing it to life!";
   var index = 0;
 
   function typeText() {
