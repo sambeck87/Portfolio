@@ -181,7 +181,7 @@ for (let i = 2; i <= 6; i += 1) {
   const thirdTool = allData[i][cardNumber].tools[2];
 
   restProjects += `<div class="pj11" id="n${i}">
-  <button class="projects desktitbut" type="button" onclick="project${number}()">Click to see more
+  <button class="projects desktitbut" type="button" onclick="project${number}()">Click for details
   </button>
   <div class="cont_rest">
     <h3 class="tproj1 mobile">${mobileTitl}</h3>
